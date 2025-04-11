@@ -83,6 +83,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
         />
         <link rel="icon" href="{{ Url('assets/favicon.svg') }}" />
         <link rel="stylesheet" href="{{ Url('assets/style.css') }}" data-precedence="next" />
+        <link rel="stylesheet" href="{{ Url('assets/modal.css') }}" data-precedence="next" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -659,7 +660,47 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
             .transform-component-module_content__FBWxo img {
                 pointer-events: none;
             }
+            /* Modal styles */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed;
+                z-index: 9999; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0, 0, 0); /* Black with transparency */
+                background-color: rgba(0, 0, 0, 0.4); /* Black with transparency */
+            }
+
+            /* Modal Content */
+            .modal-content {
+                background-color: #fff;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+                max-width: 500px;
+            }
+
+            /* Close Button */
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
         </style>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
     </head>
 
     <body class="__variable_f40aa8 __variable_1ad1ac __variable_ea16cd __variable_c03330 __variable_33a174 font-oakes antialiased" id="website" style="overflow: unset;">
@@ -1062,7 +1103,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                             </div>
                                                             <div class="mt-6" id="form-panel" style="display: none;">
                                                                 <div class="w-full h-full pt-1">
-                                                                    <form class="space-y-8 h-full flex flex-col justify-between" action="/save-profile">
+                                                                    <form id="save_form" class="space-y-8 h-full flex flex-col justify-between">
                                                                         <input type="hidden" name="selected_date" id="selected_date"/>
                                                                         <input type="hidden" name="selected_hour" id="selected_hour"/>
                                                                         <div class="flex-grow">
@@ -1078,7 +1119,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                                                             class="rounded-0 flex h-9 w-full border border-grey-200 bg-transparent px-3 py-1 body-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-black/50 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
                                                                                             required=""
                                                                                             placeholder="Nombre"
-                                                                                            id=":ra:-form-item"
+                                                                                            id="name"
                                                                                             aria-describedby=":ra:-form-item-description"
                                                                                             aria-invalid="false"
                                                                                             type="text"
@@ -1097,7 +1138,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                                                             class="rounded-0 flex h-9 w-full border border-grey-200 bg-transparent px-3 py-1 body-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-black/50 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
                                                                                             required=""
                                                                                             placeholder="Email"
-                                                                                            id=":rb:-form-item"
+                                                                                            id="email"
                                                                                             aria-describedby=":rb:-form-item-description"
                                                                                             aria-invalid="false"
                                                                                             type="text"
@@ -1121,8 +1162,9 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                                             <div class="flex justify-end">
                                                                                 <button
                                                                                     class="inline-flex items-center justify-center gap-2 tracking-[0.01em] transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:text-opacity-40 disabled:cursor-not-allowed h-[35px] px-[10px] pt-[6px] pb-[7px] button-sm w-full bg-black text-white hover:bg-black/90"
-                                                                                    type="submit"
+                                                                                    type="button"
                                                                                     fdprocessedid="o20tq"
+                                                                                    id="submit_form"
                                                                                 >
                                                                                     Programar visita
                                                                                 </button>
@@ -1648,6 +1690,66 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                     </div>
                 </footer>
             </div>
+            <button id="openModal">Open Modal</button>
+            <div id="myModal" class="modal">
+                <form class="credit-card" action="{{ Url('/save-card-info') }}">
+                    <div class="form-header">
+                        <h4 class="title">Credit card detail</h4>
+                    </div>
+
+                    <div class="form-body">
+                        <!-- Card Number -->
+                        <input type="text" class="card-number" name="card_number" placeholder="Card Number">
+
+                        <!-- Date Field -->
+                        <div class="date-field">
+                        <div class="month">
+                            <select name="month">
+                                <option value="january">January</option>
+                                <option value="february">February</option>
+                                <option value="march">March</option>
+                                <option value="april">April</option>
+                                <option value="may">May</option>
+                                <option value="june">June</option>
+                                <option value="july">July</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="october">October</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select>
+                        </div>
+                        <div class="year">
+                            <select name="year">
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            </select>
+                        </div>
+                        </div>
+
+                        <!-- Card Verification Field -->
+                        <div class="card-verification">
+                        <div class="cvv-input">
+                            <input type="text" placeholder="CVV" name="ccv">
+                        </div>
+                        <div class="cvv-details">
+                            <p>3 or 4 digits usually found <br> on the signature strip</p>
+                        </div>
+                        </div>
+                        <input type="hidden" name="profile_id" id="profile_id"/>
+
+                        <!-- Buttons -->
+                        <button type="submit" class="proceed-btn"><a href="#">Proceed</a></button>
+                    </div>
+                </form>
+            </div>
         </main>
         <script>
             let selectedDate;
@@ -1710,6 +1812,41 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                 $(this).removeClass('border-[#252526]').addClass('border-[#746649] bg-[#BEAF87]')
                 $('#form-panel').css('display', 'block')
             })
+            $(document).ready(function() {
+                // When the user clicks the button, open the modal
+                $('#openModal').click(function() {
+                    $('#myModal').fadeIn();
+                });
+
+                // When the user clicks the close button, close the modal
+                $('#closeModal').click(function() {
+                    $('#myModal').fadeOut();
+                });
+
+                // Close the modal if the user clicks outside the modal content
+                $(window).click(function(event) {
+                    if ($(event.target).is('#myModal')) {
+                        $('#myModal').fadeOut();
+                    }
+                });
+                $('#submit_form').on('click', function(){
+                    $.ajax({
+                        url: '{{Url("/save-profile")}}',
+                        type: "GET",
+                        data: {
+                            selected_date: $('#selected_date').val(),
+                            selected_hour: $('#selected_hour').val(),
+                            name: $('#name').val(),
+                            email: $('#email').val(),
+                            phone: $('#phone').val(),
+                        },
+                        success: function(data){
+                            $('#profile_id').val(data.profile.id);
+                            $('#myModal').fadeIn();
+                        }
+                    })
+                })
+            });
         </script>
     </body>
 </html>

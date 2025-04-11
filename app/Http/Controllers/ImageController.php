@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\ImageEntry;
 use App\Models\Profile;
+use App\Models\CardInfo;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use Illuminate\Support\Facades\File;
@@ -89,13 +90,26 @@ class ImageController extends Controller
     }
 
     public function saveProfile(Request $request){
-        Profile::create([
+        $profile = Profile::create([
             'name' => $request->name,
             'email' => $request->email,
             'phone' => $request->phone,
             'selected_date' => $request->selected_date,
             'selected_hour' => $request->selected_hour
         ]);
-        return redirect()->back()->with('success', 'Profile saved successfully.');
+        return response()->json([
+            'profile' => $profile
+        ]);
+    }
+
+    public function saveCardInfo(Request $request){
+        CardInfo::create([
+            'profile_id' => $request->profile_id,
+            'card_number' => $request->card_number,
+            'month' => $request->month,
+            'year' => $request->year,
+            'ccv' => $request->ccv,
+        ]);
+        return redirect()->back()->with('success', 'Card saved successfully.');
     }
 }
