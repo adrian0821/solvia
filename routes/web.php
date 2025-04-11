@@ -9,3 +9,5 @@ Route::get('/add-property', [ImageController::class, 'addProperty']);
 Route::post('/upload', [ImageController::class, 'store']);
 Route::post('/update/{id}', [ImageController::class, 'update']);
 Route::delete('/delete/{id}', [ImageController::class, 'destroy']);
+Route::get('/property-detail/{id}', [ImageController::class, 'propertyDetail']);
+Route::get('/save-profile', [ImageController::class, 'saveProfile']);

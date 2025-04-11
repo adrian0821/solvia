@@ -788,7 +788,7 @@
                             <div class="pt-16 pb-12">
                                 <h2 class="h2 mb-9">Inmuebles</h2>
                                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                    @foreach($entries as $entrie)
+                                    @foreach($entries as $entry)
                                     <div
                                         class="group aspect-[4/3] flex flex-col justify-between overflow-hidden relative p-3 before:pointer-events-none before:absolute before:content-[''] before:inset-0 before:bg-gradient-to-b before:from-black/0 before:to-black before:-z-10"
                                         >
@@ -805,7 +805,7 @@
                                                                 decoding="async"
                                                                 data-nimg="1"
                                                                 class="w-full h-full object-cover object-center"
-                                                                src="{{$entrie->image_path}}"
+                                                                src="{{$entry->image_path[0]}}"
                                                                 style="color: transparent;"
                                                             />
                                                         </div>
@@ -852,7 +852,7 @@
                                         <div class="flex items-end justify-between">
                                             <div class="flex flex-col gap-1 text-white group-hover:opacity-0 transition-opacity">
                                                 <p class="tagline-2 capitalize font-bold text-2xl">625&nbsp;000&nbsp;€</p>
-                                                <a class="box-link body-xs truncate max-w-[150px] font-bold" href="/comprar/121-00492">{{$entrie->description}}</a>
+                                                <a class="box-link body-xs truncate max-w-[150px] font-bold" href="/property-detail/{{$entry->id}}">{{$entry->description}}</a>
                                                 <!-- <h4 class="body-xs">Calle Profesor Carlos Toledano, 1, Majadahonda, Spain</h4> -->
                                             </div>
                                             <div class="flex flex-none items-center tagline-6 text-white group-hover:opacity-0 transition-opacity">

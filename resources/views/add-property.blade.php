@@ -23,7 +23,10 @@
         
         <form action="{{ url('/upload') }}" method="POST" enctype="multipart/form-data">
             @csrf
-            <input type="file" name="image" accept="image/*">
+            <input type="file" name="image[]" accept="image/*" multiple/>
+            <input type="text" name="bedrooms" placeholder="Enter bedrooms">
+            <input type="text" name="bathrooms" placeholder="Enter bathrooms">
+            <input type="text" name="price" placeholder="Enter price">
             <input type="text" name="description" placeholder="Enter description">
             <button type="submit">Add Entry</button>
         </form>
@@ -32,6 +35,9 @@
             <thead>
                 <tr>
                     <th>Image</th>
+                    <th>Bedrooms</th>
+                    <th>Bathrooms</th>
+                    <th>Price</th>
                     <th>Description</th>
                     <th>Actions</th>
                 </tr>
@@ -39,10 +45,26 @@
             <tbody>
                 @foreach($entries as $entry)
                     <tr>
-                        <td><img src="{{ asset($entry->image_path) }}" class="image-preview"></td>
+                        <td>
+                            @foreach($entry->image_path as $imagePath)
+                                <img src="{{ asset($imagePath) }}" class="image-preview">
+                            @endforeach
+                        </td>
+                        <td>
+                            <input type="text" value="{{ $entry->bedrooms }}" 
+                                onchange="updateEntry({{ $entry->id }}, this.value, 'bedrooms')">
+                        </td>
+                        <td>
+                            <input type="text" value="{{ $entry->bathrooms }}" 
+                                onchange="updateEntry({{ $entry->id }}, this.value, 'bathrooms')">
+                        </td>
+                        <td>
+                            <input type="text" value="{{ $entry->price }}" 
+                                onchange="updateEntry({{ $entry->id }}, this.value, 'price')">
+                        </td>
                         <td>
                             <input type="text" value="{{ $entry->description }}" 
-                                onchange="updateEntry({{ $entry->id }}, this.value)">
+                                onchange="updateEntry({{ $entry->id }}, this.value, 'description')">
                         </td>
                         <td>
                             <button onclick="deleteEntry({{ $entry->id }})">Delete</button>
@@ -54,14 +76,14 @@
     </div>
 
     <script>
-        function updateEntry(id, description) {
+        function updateEntry(id, value, key) {
             fetch(`/update/${id}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'X-CSRF-TOKEN': '{{ csrf_token() }}'
                 },
-                body: JSON.stringify({ description })
+                body: JSON.stringify({ value, key })
             });
         }
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\ImageEntry;
+use App\Models\Profile;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use Illuminate\Support\Facades\File;
@@ -27,39 +28,48 @@ class ImageController extends Controller
     {
         // Validate the request inputs
         $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'description' => 'required|string|max:255'
+            'image' => 'required|array',
+            'image.*' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'description' => 'required|string',
+            'bedrooms' => 'required|string',
+            'bathrooms' => 'required|string',
+            'price' => 'required|string',
         ]);
 
-        // Generate a unique filename
-        $filename = time() . '_' . $request->file('image')->getClientOriginalName();
+        $destinationPath = public_path('uploads');
 
-        // Define the path for saving the image directly into the public/uploads folder
-        $destinationPath = public_path('uploads'); // public/uploads directory
-
-        // Ensure the 'uploads' directory exists
         if (!File::exists($destinationPath)) {
-            File::makeDirectory($destinationPath, 0777, true); // Create directory if it doesn't exist
+            File::makeDirectory($destinationPath, 0777, true);
         }
 
-        // Move the uploaded file to the public/uploads directory
-        $request->file('image')->move($destinationPath, $filename);
+        $imagePaths = [];
 
-        // Create an entry in the ImageEntry model
+        foreach ($request->file('image') as $file) {
+            $filename = time() . '_' . uniqid() . '_' . $file->getClientOriginalName();
+            $file->move($destinationPath, $filename);
+            $imagePaths[] = '/uploads/' . $filename;
+        }
+
+        // Save all images as JSON array
         ImageEntry::create([
             'description' => $request->description,
-            'image_path' => '/uploads/' . $filename // Path is relative to the public directory
+            'image_path' => $imagePaths,
+            'bedrooms' => $request->bedrooms,
+            'bathrooms' => $request->bathrooms,
+            'price' => $request->price,
         ]);
 
-        return redirect()->back()->with('success', 'Image uploaded successfully.');
+        return redirect()->back()->with('success', 'Images uploaded successfully.');
     }
+
 
 
 
     public function update(Request $request, $id)
     {
         $entry = ImageEntry::findOrFail($id);
-        $entry->update(['description' => $request->description]);
+        $entry[$request->key] = $request->value;
+        $entry->update();
 
         return response()->json(['message' => 'Description updated successfully']);
     }
@@ -71,5 +81,21 @@ class ImageController extends Controller
         $entry->delete();
 
         return response()->json(['message' => 'Entry deleted successfully']);
+    }
+
+    public function propertyDetail(Request $request){
+        $entry = ImageEntry::findOrFail($request->id);
+        return view('property-detail', compact('entry'));
+    }
+
+    public function saveProfile(Request $request){
+        Profile::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'selected_date' => $request->selected_date,
+            'selected_hour' => $request->selected_hour
+        ]);
+        return redirect()->back()->with('success', 'Profile saved successfully.');
     }
 }
