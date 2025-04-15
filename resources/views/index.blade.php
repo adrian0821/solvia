@@ -14,7 +14,7 @@
             src="https://www.googletagmanager.com/gtag/js?id=G-P1FW6JSWN7&amp;l=dataLayer&amp;cx=c&amp;gtm=45He53p4v78628408za200&amp;tag_exp=102482433~102788824~102803279~102813109~102887799~102926062"
         ></script>
         <link rel="preload" href="https://www.googletagmanager.com/gtm.js?id=GTM-P89CFVV" as="script" />
-        <title>SOLVIA 21® España | Encuentre su casa.</title>
+        <title>SOLVIA ® España | Encuentre su casa.</title>
         <meta name="description" content="Encuentre su casa ideal en España con SOLVIA. Compre, alquile o venda su inmueble con los mejores profesionales del mercado inmobiliario." />
         <link rel="canonical" href="https://www.century21.es" />
         <meta property="og:title" content="SOLVIA® España | Encuentre su casa." />
@@ -605,14 +605,14 @@
         </script>
         <main>
             <div class="flex flex-col min-h-screen justify-between">
-                <div class="fixed inset-x-0 top-0 h-[64px] bg-grey-600 z-40 transition-all duration-150 opacity-0 invisible"></div>
-                <header class="w-full flex items-center h-[64px] top-0 z-50 transition-colors bg-transparent fixed inset-x-0">
+                <div class="fixed inset-x-0 top-0 h-[100px] bg-grey-600 z-40 transition-all duration-150 opacity-0 invisible"></div>
+                <header class="w-full flex items-center h-[100px] top-0 z-50 transition-colors bg-transparent fixed inset-x-0" style="background: transparent; height: 100px;">
                     <div class="w-full px-4 lg:px-6 flex items-center justify-start lg:justify-between">
                         <button class="lg:hidden mr-4" aria-label="Toggle menu">
                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon w-6 h-6 text-white"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
                         </button>
                         <a aria-label="Century21 Homepage" href="/">
-                            <p style="color: #beaf87; font-size: 25;">SOLVIA</p>                           
+                            <img src="{{Url('assets/logo.png')}}" style="width: 250px;"/>             
                         </a>
                         <nav class="items-center gap-6 hidden lg:flex">
                             <a class="button-md font-bold text-white" href="/comprar">Comprar</a><a class="button-md font-bold text-white" href="/alquilar">Alquilar</a>
@@ -790,7 +790,7 @@
                                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                                     @foreach($entries as $entry)
                                     <div
-                                        class="group aspect-[4/3] flex flex-col justify-between overflow-hidden relative p-3 before:pointer-events-none before:absolute before:content-[''] before:inset-0 before:bg-gradient-to-b before:from-black/0 before:to-black before:-z-10"
+                                        class="aspect-[4/3] flex flex-col justify-between overflow-hidden relative p-3 before:pointer-events-none before:absolute before:content-[''] before:inset-0 before:bg-gradient-to-b before:from-black/0 before:to-black before:-z-10"
                                         >
                                         <div class="absolute inset-0 -z-20 w-full h-full" role="region" aria-roledescription="carousel">
                                             <div class="overflow-hidden w-full h-full">
@@ -851,7 +851,7 @@
                                         </div>
                                         <div class="flex items-end justify-between">
                                             <div class="flex flex-col gap-1 text-white group-hover:opacity-0 transition-opacity">
-                                                <p class="tagline-2 capitalize font-bold text-2xl">{{$entry->price}}</p>
+                                                <p class="tagline-2 capitalize font-bold text-2xl">{{$entry->price}}€</p>
                                                 <a class="box-link body-xs truncate max-w-[150px] font-bold" href="/property-detail/{{$entry->id}}">{{$entry->description}}</a>
                                                 <!-- <h4 class="body-xs">Calle Profesor Carlos Toledano, 1, Majadahonda, Spain</h4> -->
                                             </div>
@@ -933,15 +933,6 @@
                                     </div>
                                     @endforeach
                                 </div>
-                                <a
-                                    class="inline-flex items-center justify-center gap-2 tracking-[0.01em] transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:text-opacity-40 disabled:cursor-not-allowed bg-white border border-grey-200 text-black hover:bg-grey-100 [&amp;>svg]:text-gold-600 h-[48px] px-[24px] pt-[10px] pb-[13px] button-lg flex-grow mt-9"
-                                    href="/comprar"
-                                >
-                                    Ver todos los inmuebles
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-4 h-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                                    </svg>
-                                </a>
                             </div>
                         </div>
                         <div class="py-12">
@@ -961,15 +952,6 @@
                                     <div class="col-span-4 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 bg-grey-600 p-8 md:p-24">
                                         <h2 class="h2 text-white mb-4 max-w-[348px]">¿Cuánto vale su vivienda?</h2>
                                         <p class="body-lg text-white max-w-[424px]">Obtenga rápidamente la mejor valoración para la venta de su vivienda con SOLVIA.</p>
-                                        <a
-                                            class="inline-flex items-center justify-center gap-2 tracking-[0.01em] transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:text-opacity-40 disabled:cursor-not-allowed bg-gold-400 text-black hover:bg-gold-500 h-[48px] px-[24px] pt-[10px] pb-[13px] button-lg flex-grow mt-9"
-                                            href="/estimar-inmueble"
-                                        >
-                                            Calcular ahora
-                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon w-4 h-4">
-                                                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                                            </svg>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -979,169 +961,6 @@
                 <footer class="bg-grey-100 py-16">
                     <div class="container">
                         <div class="site-grid">
-                            <div class="col-span-4 md:col-span-6 lg:col-span-3">
-                                <a aria-label="SOLVIA Homepage" href="/">
-                                </a>
-                            </div>
-                            <div class="col-span-4 lg:col-span-9 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:flex lg:justify-between mt-8 lg:mt-0">
-                                <div class="lg:hidden w-full">
-                                    <div class="w-full" data-orientation="vertical">
-                                        <div data-state="closed" data-orientation="vertical" class="border-b border-border">
-                                            <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
-                                                <button
-                                                    type="button"
-                                                    aria-controls="radix-:R159psmkq:"
-                                                    aria-expanded="false"
-                                                    data-state="closed"
-                                                    data-orientation="vertical"
-                                                    id="radix-:R59psmkq:"
-                                                    class="flex flex-1 items-center justify-between py-4 font-medium transition-all [&amp;[data-state=open]>svg]:rotate-180 gap-4 text-left h5"
-                                                    data-radix-collection-item=""
-                                                >
-                                                    General
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon h-4 w-4 shrink-0 transition-transform duration-200 text-gold-600">
-                                                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
-                                                    </svg>
-                                                </button>
-                                            </h3>
-                                            <div
-                                                data-state="closed"
-                                                id="radix-:R159psmkq:"
-                                                hidden=""
-                                                role="region"
-                                                aria-labelledby="radix-:R59psmkq:"
-                                                data-orientation="vertical"
-                                                class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-                                                style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
-                                            ></div>
-                                        </div>
-                                        <div data-state="closed" data-orientation="vertical" class="border-b border-border">
-                                            <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
-                                                <button
-                                                    type="button"
-                                                    aria-controls="radix-:R199psmkq:"
-                                                    aria-expanded="false"
-                                                    data-state="closed"
-                                                    data-orientation="vertical"
-                                                    id="radix-:R99psmkq:"
-                                                    class="flex flex-1 items-center justify-between py-4 font-medium transition-all [&amp;[data-state=open]>svg]:rotate-180 gap-4 text-left h5"
-                                                    data-radix-collection-item=""
-                                                >
-                                                    Recursos
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon h-4 w-4 shrink-0 transition-transform duration-200 text-gold-600">
-                                                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
-                                                    </svg>
-                                                </button>
-                                            </h3>
-                                            <div
-                                                data-state="closed"
-                                                id="radix-:R199psmkq:"
-                                                hidden=""
-                                                role="region"
-                                                aria-labelledby="radix-:R99psmkq:"
-                                                data-orientation="vertical"
-                                                class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-                                                style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
-                                            ></div>
-                                        </div>
-                                        <div data-state="closed" data-orientation="vertical" class="border-b border-border">
-                                            <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
-                                                <button
-                                                    type="button"
-                                                    aria-controls="radix-:R1d9psmkq:"
-                                                    aria-expanded="false"
-                                                    data-state="closed"
-                                                    data-orientation="vertical"
-                                                    id="radix-:Rd9psmkq:"
-                                                    class="flex flex-1 items-center justify-between py-4 font-medium transition-all [&amp;[data-state=open]>svg]:rotate-180 gap-4 text-left h5"
-                                                    data-radix-collection-item=""
-                                                >
-                                                    Sobre SOLVIA
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon h-4 w-4 shrink-0 transition-transform duration-200 text-gold-600">
-                                                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
-                                                    </svg>
-                                                </button>
-                                            </h3>
-                                            <div
-                                                data-state="closed"
-                                                id="radix-:R1d9psmkq:"
-                                                hidden=""
-                                                role="region"
-                                                aria-labelledby="radix-:Rd9psmkq:"
-                                                data-orientation="vertical"
-                                                class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-                                                style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
-                                            ></div>
-                                        </div>
-                                        <div data-state="closed" data-orientation="vertical" class="border-b border-border">
-                                            <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
-                                                <button
-                                                    type="button"
-                                                    aria-controls="radix-:R1h9psmkq:"
-                                                    aria-expanded="false"
-                                                    data-state="closed"
-                                                    data-orientation="vertical"
-                                                    id="radix-:Rh9psmkq:"
-                                                    class="flex flex-1 items-center justify-between py-4 font-medium transition-all [&amp;[data-state=open]>svg]:rotate-180 gap-4 text-left h5"
-                                                    data-radix-collection-item=""
-                                                >
-                                                    Equipo SOLVIA
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon h-4 w-4 shrink-0 transition-transform duration-200 text-gold-600">
-                                                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
-                                                    </svg>
-                                                </button>
-                                            </h3>
-                                            <div
-                                                data-state="closed"
-                                                id="radix-:R1h9psmkq:"
-                                                hidden=""
-                                                role="region"
-                                                aria-labelledby="radix-:Rh9psmkq:"
-                                                data-orientation="vertical"
-                                                class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-                                                style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
-                                            ></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <nav class="hidden lg:flex flex-col gap-6">
-                                    <span class="h5">General</span>
-                                    <ul class="flex flex-col gap-2">
-                                        <li><a class="body-sm link" href="/comprar">Comprar</a></li>
-                                        <li><a class="body-sm link" href="/alquilar">Alquilar</a></li>
-                                        <li><a class="body-sm link" href="/vender">Vender</a></li>
-                                        <li><a class="body-sm link" href="/obra-nueva">Obra nueva</a></li>
-                                        <li><a class="body-sm link" href="/contactanos">Contacte-nos</a></li>
-                                    </ul>
-                                </nav>
-                                <nav class="hidden lg:flex flex-col gap-6">
-                                    <span class="h5">Recursos</span>
-                                    <ul class="flex flex-col gap-2">
-                                        <li><a class="body-sm link" href="/guia-comprar-casa">Guia para comprar casa</a></li>
-                                        <li><a class="body-sm link" href="/guia-vender-casa">Guia para vender casa</a></li>
-                                        <li><a class="body-sm link" href="/hipoteca">Hipoteca</a></li>
-                                        <li><a class="body-sm link" href="/informes">Estudios</a></li>
-                                        <li><a class="body-sm link" href="/blog">Blog</a></li>
-                                    </ul>
-                                </nav>
-                                <nav class="hidden lg:flex flex-col gap-6">
-                                    <span class="h5">Sobre SOLVIA</span>
-                                    <ul class="flex flex-col gap-2">
-                                        <li><a class="body-sm link" href="/marca">La marca SOLVIA®</a></li>
-                                        <li><a class="body-sm link" href="/iberia">SOLVIA® Iberia</a></li>
-                                        <li><a class="body-sm link" href="https://www.century21.com">SOLVIA® Global</a></li>
-                                        <li><a class="body-sm link" href="/app">SOLVIA® App</a></li>
-                                    </ul>
-                                </nav>
-                                <nav class="hidden lg:flex flex-col gap-6">
-                                    <span class="h5">Equipo SOLVIA</span>
-                                    <ul class="flex flex-col gap-2">
-                                        <li><a class="body-sm link" href="/unete-a-nosotros">Únete a SOLVIA</a></li>
-                                        <li><a class="body-sm link" href="/agencias">Agencias</a></li>
-                                        <li><a class="body-sm link" href="/asesores">Asesores</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
                             <nav class="col-span-4 md:col-span-12 flex flex-col lg:flex-row justify-center items-center gap-6 py-8 border-y border-grey-200 mt-2">
                                 <a class="body-sm link" href="/terminos-y-condiciones">Términos y Condiciones</a><a class="body-sm link" target="_blank" href="https://www.livroreclamacoes.pt/">Libro de Reclamaciones</a>
                             </nav>

@@ -21,8 +21,8 @@ body {
 
 .credit-card {
   width            : 430px;
-  height           : 500px;
-  margin           : 200px auto 0;
+  height           : 520px;
+  margin           : 100px auto 0;
   border           : 1px solid #ddd;
   border-radius    : 6px;
   background-color : #fff;
@@ -36,7 +36,6 @@ body {
 }
 
 .form-body {
-  margin-top: 100px;
   height  : 340px;
   padding : 30px 30px 20px;
 }

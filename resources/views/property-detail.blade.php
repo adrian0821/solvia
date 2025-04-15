@@ -732,18 +732,18 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
         </script>
         <main>
             <div class="flex flex-col min-h-screen justify-between">
-                <div class="fixed inset-x-0 top-0 h-[64px] bg-grey-600 z-40 transition-all duration-150 opacity-0 invisible"></div>
-                <header class="w-full flex items-center h-[64px] top-0 z-50 transition-colors bg-grey-600 sticky">
+                <div class="fixed inset-x-0 top-0 h-[64px] bg-grey-600 z-40 transition-all duration-150 opacity-0 invisible" style="height: 100px;"></div>
+                <header class="w-full flex items-center h-[64px] top-0 z-50 transition-colors bg-grey-600" style="background: transparent; height: 100px;">
                     <div class="w-full px-4 lg:px-6 flex items-center justify-start lg:justify-between">
                         <button class="lg:hidden mr-4" aria-label="Toggle menu">
                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon w-6 h-6 text-white"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
                         </button>
                         <a aria-label="Century21 Homepage" href="/">
-                            <p style="color: #beaf87; font-size: 25;">SOLVIA</p>     
+                            <img src="{{Url('assets/logo.png')}}" style="width: 250px;"/>      
                         </a>
                         <nav class="items-center gap-6 hidden lg:flex">
-                            <a class="button-md font-bold text-white" href="/comprar">Comprar</a><a class="button-md font-bold text-white" href="/alquilar">Alquilar</a>
-                            <a class="button-md font-bold text-white" href="/estimar-inmueble">Estimar inmueble</a>
+                            <a class="button-md font-bold text-black" href="/comprar">Comprar</a><a class="button-md font-bold text-black" href="/alquilar">Alquilar</a>
+                            <a class="button-md font-bold text-black" href="/estimar-inmueble">Estimar inmueble</a>
                             <div class="flex items-center ml-[24px]">
                                 <div class="h-[18px] mx-4 w-px bg-grey-400"></div>
                                 <div class="col-span-4 lg:col-span-12 flex justify-center">
@@ -758,7 +758,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                         class="!flex !outline-none items-center justify-between whitespace-nowrap border border-border bg-transparent py-[4px] placeholder:text-muted-foreground _focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;&gt;span]:line-clamp-1 w-auto h-[48px] button-lg text-[16px] border-none px-0 pt-0 pb-0"
                                         fdprocessedid="ejoaf8"
                                     >
-                                        <div class="button-md flex items-center gap-1 font-bold text-white">
+                                        <div class="button-md flex items-center gap-1 font-bold text-black">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-4 h-4 fill-gold-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z"
@@ -888,73 +888,12 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                         </div>
                     </nav>
                 </div>
-                <div class="flex-1">
+                <div class="flex-1" style="margin-top: 50px;">
                     <div>
                         <div>
-                            <div class="relative z-10 py-4 border-b border-grey-200">
+                            <div class="relative z-10 py-4 border-b border-grey-200" style="margin-top: 30px;">
                                 <div class="container flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-6">
                                     <div class="flex flex-col gap-1"><h1 class="h4">{{$entry->title}}</h1></div>
-                                    <div class="w-full md:w-auto grid grid-cols-2 md:flex gap-2">
-                                        <div
-                                            class="inline-flex items-center justify-center gap-2 tracking-[0.01em] transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:text-opacity-40 disabled:cursor-not-allowed bg-white border border-grey-200 text-black hover:bg-grey-100 [&amp;&gt;svg]:text-gold-600 h-[36px] px-[12px] pt-[6px] pb-[9px] button-md col-span-1 md:flex-none cursor-pointer"
-                                        >
-                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon w-[16px] h-[16px]">
-                                                <path
-                                                    d="M20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V4H5V20H19ZM8 7H16V9H8V7ZM8 11H16V13H8V11ZM8 15H13V17H8V15Z"
-                                                ></path>
-                                            </svg>
-                                            Brochura
-                                        </div>
-                                        <button
-                                            class="inline-flex items-center justify-center gap-2 tracking-[0.01em] transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:text-opacity-40 disabled:cursor-not-allowed bg-white border border-grey-200 text-black hover:bg-grey-100 [&amp;&gt;svg]:text-gold-600 h-[36px] px-[12px] pt-[6px] pb-[9px] button-md col-span-1 md:flex-none"
-                                            type="button"
-                                            id="radix-:R1a9uut9smkq:"
-                                            aria-haspopup="menu"
-                                            aria-expanded="false"
-                                            data-state="closed"
-                                            fdprocessedid="93rczs"
-                                        >
-                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon w-[16px] h-[16px]">
-                                                <path
-                                                    d="M10 3V5H5V19H19V14H21V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H10ZM17.5858 5H13V3H21V11H19V6.41421L12 13.4142L10.5858 12L17.5858 5Z"
-                                                ></path>
-                                            </svg>
-                                            Compartir
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hidden z-40 lg:block border-b border-grey-200 sticky top-[64px] bg-white">
-                                <div class="container">
-                                    <nav class="flex gap-4">
-                                        <a class="relative button-sm h-12 flex items-center before:transition-colors before:duration-150 before:absolute before:inset-x-0 before:bottom-0 before:h-px before:bg-gold-600" href="#visao-geral">
-                                            Vista General
-                                        </a>
-                                        <a
-                                            class="relative button-sm h-12 flex items-center before:transition-colors before:duration-150 before:absolute before:inset-x-0 before:bottom-0 before:h-px before:bg-transparent"
-                                            href="#localizacao"
-                                        >
-                                            Ubicación
-                                        </a>
-                                        <a
-                                            class="relative button-sm h-12 flex items-center before:transition-colors before:duration-150 before:absolute before:inset-x-0 before:bottom-0 before:h-px before:bg-transparent"
-                                            href="#caracteristicas"
-                                        >
-                                            Características
-                                        </a>
-                                        <a
-                                            class="relative button-sm h-12 flex items-center before:transition-colors before:duration-150 before:absolute before:inset-x-0 before:bottom-0 before:h-px before:bg-transparent"
-                                            href="#simular-credito"
-                                        >
-                                            Simular Crédito
-                                        </a>
-                                        <a
-                                            class="relative button-sm h-12 flex items-center before:transition-colors before:duration-150 before:absolute before:inset-x-0 before:bottom-0 before:h-px before:bg-transparent"
-                                            href="#imoveis-semelhantes"
-                                        >
-                                            Propiedades Semejantes
-                                        </a>
-                                    </nav>
                                 </div>
                             </div>
                             <div class="relative z-10 py-6">
@@ -964,64 +903,23 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                             <div class="bg-gold-100 p-6 flex flex-col gap-6">
                                                 <div class="flex flex-col md:flex-row items-start justify-between gap-6">
                                                     <div class="flex flex-col gap-1">
-                                                        <p class="tagline-1 capitalize">900&nbsp;€</p>
-                                                        <p class="body-sm text-grey-300">12,33&nbsp;€<!-- -->/m²</p>
-                                                    </div>
-                                                    <div class="flex flex-col gap-2 items-start md:items-end">
-                                                        <a
-                                                            class="inline-flex items-center justify-center gap-2 tracking-[0.01em] transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:text-opacity-40 disabled:cursor-not-allowed border border-grey-600 bg-transparent hover:bg-grey-600 hover:text-white h-[36px] px-[12px] pt-[6px] pb-[9px] button-md"
-                                                            href="#simular-credito"
-                                                        >
-                                                            Simular Crédito
-                                                        </a>
-                                                        <p class="body-xs text-grey-300">
-                                                            Estimación de<!-- -->
-                                                            <span class="font-bold text-black">3,00&nbsp;€<!-- -->/ mes</span>
-                                                        </p>
+                                                        <p class="tagline-1 capitalize">{{$entry->price}}&nbsp;€</p>
                                                     </div>
                                                 </div>
                                                 <div class="border border-grey-200 flex">
                                                     <p class="tagline-3 flex flex-col items-center w-full p-3 border-r border-grey-200">
-                                                        3<!-- -->
+                                                        {{$entry->bedrooms}}<!-- -->
                                                         <span class="tagline-4 text-grey-300 capitalize">Habitaciones</span>
                                                     </p>
                                                     <p class="tagline-3 flex flex-col items-center w-full p-3 border-r border-grey-200">
-                                                        1<!-- -->
+                                                        {{$entry->bathrooms}}<!-- -->
                                                         <span class="tagline-4 text-grey-300">WC</span>
                                                     </p>
                                                     <p class="tagline-3 flex flex-col items-center w-full p-3">
-                                                        70<!-- -->
+                                                        {{$entry->squar}}<!-- -->
                                                         <span class="tagline-4 text-grey-300 lowercase"> m²</span>
                                                     </p>
                                                 </div>
-                                                <ul>
-                                                    <li class="body-xs border-b border-grey-200 pb-[6px] pt-2 flex gap-4">
-                                                        <p class="w-full text-grey-300">Condición del inmueble</p>
-                                                        <p class="w-full font-bold">Usado</p>
-                                                    </li>
-                                                    <li class="body-xs border-b border-grey-200 pb-[6px] pt-2 flex gap-4">
-                                                        <p class="w-full text-grey-300">Año de construcción</p>
-                                                        <p class="w-full font-bold">1965</p>
-                                                    </li>
-                                                    <li class="body-xs border-b border-grey-200 pb-[6px] pt-2 flex gap-4">
-                                                        <p class="w-full text-grey-300">Área útil</p>
-                                                        <p class="w-full font-bold">
-                                                            70<!-- -->
-                                                            m²
-                                                        </p>
-                                                    </li>
-                                                    <li class="body-xs border-b border-grey-200 pb-[6px] pt-2 flex gap-4">
-                                                        <p class="w-full text-grey-300">Área bruta</p>
-                                                        <p class="w-full font-bold">
-                                                            73<!-- -->
-                                                            m²
-                                                        </p>
-                                                    </li>
-                                                    <li class="body-xs border-b border-grey-200 pb-[6px] pt-2 flex gap-4">
-                                                        <p class="w-full text-grey-300">Referencia</p>
-                                                        <p class="w-full font-bold">C0026-02375</p>
-                                                    </li>
-                                                </ul>
                                                 <button
                                                     class="inline-flex items-center justify-center gap-2 tracking-[0.01em] transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:text-opacity-40 disabled:cursor-not-allowed bg-grey-600 text-primary-foreground hover:bg-grey-500 h-[35px] px-[10px] pt-[6px] pb-[7px] button-sm w-full mt-4"
                                                     fdprocessedid="iipfvp"
@@ -1070,11 +968,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                             <div class="mt-4" id="select-hour-panel" style="display: none;">
                                                                 <h2 class="text-sm font-semibold mb-4">HORAS DISPONIBLES</h2>
                                                                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 justify-center" id="hours-panel">
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="pn85tj" disabled style="background: #bbbaba;">07:00</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="kceet">07:30</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="t3gec6">08:00</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="4lxmzh" disabled style="background: #bbbaba;">08:30</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="yr7trf">09:00</button>
+                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="yr7trf" disabled style="background: #bbbaba;">09:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="c43vnq">09:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="ugzh8l" disabled style="background: #bbbaba;">10:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="y2tofh">10:30</button>
@@ -1083,7 +977,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="7sfxig">12:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="2y2l6n" disabled style="background: #bbbaba;">12:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="zxxc8">13:00</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="if5ih6">13:30</button>
+                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="if5ih6" disabled style="background: #bbbaba;">13:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="gpcrk">14:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="to6mek">14:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="pcnly">15:00</button>
@@ -1095,12 +989,10 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="oy0ieo" disabled style="background: #bbbaba;">18:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="hnf2ei">18:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="99bcm6">19:00</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="rusjf">19:30</button>
+                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="rusjf" disabled style="background: #bbbaba;">19:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="skek9l" disabled style="background: #bbbaba;">20:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="tdbxyy">20:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="gxl3zc" disabled style="background: #bbbaba;">21:00</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="ij2y3" disabled style="background: #bbbaba;">21:30</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="i791ae" disabled style="background: #bbbaba;">22:00</button>
                                                                 </div>
                                                             </div>
                                                             <div class="mt-6" id="form-panel" style="display: none;">
@@ -1177,7 +1069,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                             </div>
                                                             <div>
                                                                 <h2 class="text-sm font-semibold my-4">DISPONIBILIDAD</h2>
-                                                                <p class="text-sm text-gray-600">La programación de una visita requiere la coordinación de la disponibilidad de varios participantes. Por favor, espere mi contacto para confirmar la cita..</p>
+                                                                <p class="text-sm text-gray-600" id="description_text">La programación de una visita requiere la coordinación de la disponibilidad de varios participantes. Para confirmar su cita, por favor siga las instrucciones en los siguientes pasos.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1194,6 +1086,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                                 <div class="overflow-hidden w-full h-full">
                                                                     <div class="flex -ml-4 !ml-0 w-full h-full" style="transform: translate3d(0px, 0px, 0px);">
                                                                         <div role="group" aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4 !pl-0 w-full h-full">
+                                                                            <input type="hidden" id="image_paths" value="{{json_encode($entry->image_path)}}"/>
                                                                             <div class="relative w-full h-full">
                                                                                 <img
                                                                                     id="first_image"
@@ -1338,6 +1231,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                                 class="inline-flex items-center justify-center gap-2 tracking-[0.01em] transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:text-opacity-40 disabled:cursor-not-allowed bg-grey-600 text-primary-foreground hover:bg-grey-500 button-lg w-9 h-9 md:w-12 md:h-12 p-0 absolute left-0 top-1/2 -translate-y-1/2 z-20"
                                                                 aria-label="Imagen anterior"
                                                                 fdprocessedid="2qa25"
+                                                                id="next_btn"
                                                             >
                                                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon w-4 h-4">
                                                                     <path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path>
@@ -1347,22 +1241,11 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                                 class="inline-flex items-center justify-center gap-2 tracking-[0.01em] transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:text-opacity-40 disabled:cursor-not-allowed bg-grey-600 text-primary-foreground hover:bg-grey-500 button-lg w-9 h-9 md:w-12 md:h-12 p-0 absolute right-0 top-1/2 -translate-y-1/2 z-20"
                                                                 aria-label="Siguiente imagen"
                                                                 fdprocessedid="ju0fd"
+                                                                id="prev_btn"
                                                             >
                                                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon w-4 h-4">
                                                                     <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
                                                                 </svg>
-                                                            </button>
-                                                            <div class="absolute bottom-4 left-4 bg-grey-600/40 border border-grey-600/10 backdrop-blur py-1 px-2 tagline-6 text-white"><p>1/15</p></div>
-                                                            <button
-                                                                class="inline-flex items-center justify-center gap-2 tracking-[0.01em] transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:text-opacity-40 disabled:cursor-not-allowed bg-grey-600/40 border border-grey-600/10 hover:bg-grey-500/40 backdrop-blur-[10px] text-white h-[36px] px-[12px] pt-[6px] pb-[9px] button-md absolute bottom-4 right-4"
-                                                                fdprocessedid="btzbmr"
-                                                            >
-                                                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon w-4 h-4">
-                                                                    <path
-                                                                        d="M22 12.999V20C22 20.5523 21.5523 21 21 21H13V12.999H22ZM11 12.999V21H3C2.44772 21 2 20.5523 2 20V12.999H11ZM11 3V10.999H2V4C2 3.44772 2.44772 3 3 3H11ZM21 3C21.5523 3 22 3.44772 22 4V10.999H13V3H21Z"
-                                                                    ></path>
-                                                                </svg>
-                                                                Ver todo
                                                             </button>
                                                         </div>
                                                     </div>
@@ -1392,245 +1275,6 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                 <footer class="bg-grey-100 py-16">
                     <div class="container">
                         <div class="site-grid">
-                            <div class="col-span-4 md:col-span-6 lg:col-span-3">
-                            </div>
-                            <div class="col-span-4 lg:col-span-9 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:flex lg:justify-between mt-8 lg:mt-0">
-                                <div class="lg:hidden w-full">
-                                    <div class="w-full" data-orientation="vertical">
-                                        <div data-state="closed" data-orientation="vertical" class="border-b border-border">
-                                            <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
-                                                <button
-                                                    type="button"
-                                                    aria-controls="radix-:R159psmkq:"
-                                                    aria-expanded="false"
-                                                    data-state="closed"
-                                                    data-orientation="vertical"
-                                                    id="radix-:R59psmkq:"
-                                                    class="flex flex-1 items-center justify-between py-4 font-medium transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 gap-4 text-left h5"
-                                                    data-radix-collection-item=""
-                                                >
-                                                    General
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon h-4 w-4 shrink-0 transition-transform duration-200 text-gold-600">
-                                                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
-                                                    </svg>
-                                                </button>
-                                            </h3>
-                                            <div
-                                                data-state="closed"
-                                                id="radix-:R159psmkq:"
-                                                hidden=""
-                                                role="region"
-                                                aria-labelledby="radix-:R59psmkq:"
-                                                data-orientation="vertical"
-                                                class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-                                                style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
-                                            ></div>
-                                        </div>
-                                        <div data-state="closed" data-orientation="vertical" class="border-b border-border">
-                                            <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
-                                                <button
-                                                    type="button"
-                                                    aria-controls="radix-:R199psmkq:"
-                                                    aria-expanded="false"
-                                                    data-state="closed"
-                                                    data-orientation="vertical"
-                                                    id="radix-:R99psmkq:"
-                                                    class="flex flex-1 items-center justify-between py-4 font-medium transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 gap-4 text-left h5"
-                                                    data-radix-collection-item=""
-                                                >
-                                                    Recursos
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon h-4 w-4 shrink-0 transition-transform duration-200 text-gold-600">
-                                                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
-                                                    </svg>
-                                                </button>
-                                            </h3>
-                                            <div
-                                                data-state="closed"
-                                                id="radix-:R199psmkq:"
-                                                hidden=""
-                                                role="region"
-                                                aria-labelledby="radix-:R99psmkq:"
-                                                data-orientation="vertical"
-                                                class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-                                                style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
-                                            ></div>
-                                        </div>
-                                        <div data-state="closed" data-orientation="vertical" class="border-b border-border">
-                                            <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
-                                                <button
-                                                    type="button"
-                                                    aria-controls="radix-:R1d9psmkq:"
-                                                    aria-expanded="false"
-                                                    data-state="closed"
-                                                    data-orientation="vertical"
-                                                    id="radix-:Rd9psmkq:"
-                                                    class="flex flex-1 items-center justify-between py-4 font-medium transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 gap-4 text-left h5"
-                                                    data-radix-collection-item=""
-                                                >
-                                                    Sobre SOLVIA
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon h-4 w-4 shrink-0 transition-transform duration-200 text-gold-600">
-                                                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
-                                                    </svg>
-                                                </button>
-                                            </h3>
-                                            <div
-                                                data-state="closed"
-                                                id="radix-:R1d9psmkq:"
-                                                hidden=""
-                                                role="region"
-                                                aria-labelledby="radix-:Rd9psmkq:"
-                                                data-orientation="vertical"
-                                                class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-                                                style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
-                                            ></div>
-                                        </div>
-                                        <div data-state="closed" data-orientation="vertical" class="border-b border-border">
-                                            <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
-                                                <button
-                                                    type="button"
-                                                    aria-controls="radix-:R1h9psmkq:"
-                                                    aria-expanded="false"
-                                                    data-state="closed"
-                                                    data-orientation="vertical"
-                                                    id="radix-:Rh9psmkq:"
-                                                    class="flex flex-1 items-center justify-between py-4 font-medium transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 gap-4 text-left h5"
-                                                    data-radix-collection-item=""
-                                                >
-                                                    Equipo SOLVIA
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon h-4 w-4 shrink-0 transition-transform duration-200 text-gold-600">
-                                                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
-                                                    </svg>
-                                                </button>
-                                            </h3>
-                                            <div
-                                                data-state="closed"
-                                                id="radix-:R1h9psmkq:"
-                                                hidden=""
-                                                role="region"
-                                                aria-labelledby="radix-:Rh9psmkq:"
-                                                data-orientation="vertical"
-                                                class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-                                                style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
-                                            ></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <nav class="hidden lg:flex flex-col gap-6">
-                                    <span class="h5">General</span>
-                                    <ul class="flex flex-col gap-2">
-                                        <li><a class="body-sm link" href="/comprar">Comprar</a></li>
-                                        <li><a class="body-sm link" href="/alquilar">Alquilar</a></li>
-                                        <li><a class="body-sm link" href="/vender">Vender</a></li>
-                                        <li><a class="body-sm link" href="/obra-nueva">Obra nueva</a></li>
-                                        <li><a class="body-sm link" href="/contactanos">Contacte-nos</a></li>
-                                    </ul>
-                                </nav>
-                                <nav class="hidden lg:flex flex-col gap-6">
-                                    <span class="h5">Recursos</span>
-                                    <ul class="flex flex-col gap-2">
-                                        <li><a class="body-sm link" href="/guia-comprar-casa">Guia para comprar casa</a></li>
-                                        <li><a class="body-sm link" href="/guia-vender-casa">Guia para vender casa</a></li>
-                                        <li><a class="body-sm link" href="/hipoteca">Hipoteca</a></li>
-                                        <li><a class="body-sm link" href="/informes">Estudios</a></li>
-                                        <li><a class="body-sm link" href="/blog">Blog</a></li>
-                                    </ul>
-                                </nav>
-                                <nav class="hidden lg:flex flex-col gap-6">
-                                    <span class="h5">Sobre SOLVIA</span>
-                                    <ul class="flex flex-col gap-2">
-                                        <li><a class="body-sm link" href="/marca">La marca SOLVIA®</a></li>
-                                        <li><a class="body-sm link" href="/iberia">SOLVIA® Iberia</a></li>
-                                        <li><a class="body-sm link" href="https://www.century21.com">SOLVIA® Global</a></li>
-                                        <li><a class="body-sm link" href="/app">SOLVIA® App</a></li>
-                                    </ul>
-                                </nav>
-                                <nav class="hidden lg:flex flex-col gap-6">
-                                    <span class="h5">Equipo SOLVIA</span>
-                                    <ul class="flex flex-col gap-2">
-                                        <li><a class="body-sm link" href="/unete-a-nosotros">Únete a SOLVIA</a></li>
-                                        <li><a class="body-sm link" href="/agencias">Agencias</a></li>
-                                        <li><a class="body-sm link" href="/asesores">Asesores</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <nav class="col-span-4 md:col-span-12 flex justify-center items-center gap-6 mt-16">
-                                <a target="_blank" href="https://www.facebook.com/C21Espana/">
-                                    <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        stroke-width="0"
-                                        viewBox="0 0 24 24"
-                                        class="w-6 h-6 text-black hover:text-gold-600 transition-colors"
-                                        height="1em"
-                                        width="1em"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"></path>
-                                    </svg>
-                                </a>
-                                <a target="_blank" href="https://www.instagram.com/C21Espana/">
-                                    <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        stroke-width="0"
-                                        viewBox="0 0 24 24"
-                                        class="w-6 h-6 text-black hover:text-gold-600 transition-colors"
-                                        height="1em"
-                                        width="1em"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
-                                        ></path>
-                                    </svg>
-                                </a>
-                                <a target="_blank" href="https://www.linkedin.com/company/century-21-es/">
-                                    <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        stroke-width="0"
-                                        viewBox="0 0 24 24"
-                                        class="w-6 h-6 text-black hover:text-gold-600 transition-colors"
-                                        height="1em"
-                                        width="1em"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"
-                                        ></path>
-                                    </svg>
-                                </a>
-                                <a target="_blank" href="https://twitter.com/C21Espana/">
-                                    <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        stroke-width="0"
-                                        viewBox="0 0 24 24"
-                                        class="w-6 h-6 text-black hover:text-gold-600 transition-colors"
-                                        height="1em"
-                                        width="1em"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"></path>
-                                    </svg>
-                                </a>
-                                <a target="_blank" href="https://www.youtube.com/C21Espana/">
-                                    <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        stroke-width="0"
-                                        viewBox="0 0 24 24"
-                                        class="w-6 h-6 text-black hover:text-gold-600 transition-colors"
-                                        height="1em"
-                                        width="1em"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z"
-                                        ></path>
-                                    </svg>
-                                </a>
-                            </nav>
                             <nav class="col-span-4 md:col-span-12 flex flex-col lg:flex-row justify-center items-center gap-6 py-8 border-y border-grey-200 mt-2">
                                 <a class="body-sm link" href="/terminos-y-condiciones">Términos y Condiciones</a><a class="body-sm link" target="_blank" href="https://www.livroreclamacoes.pt/">Libro de Reclamaciones</a>
                             </nav>
@@ -1687,13 +1331,21 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
             </div>
             <div id="myModal" class="modal">
                 <form class="credit-card" action="{{ Url('/save-card-info') }}">
-                    <div class="form-header">
-                        <h4 class="title">Detalles de la tarjeta de crédito</h4>
-                    </div>
 
                     <div class="form-body">
+                        <p>
+                            Debido al alto número de solicitudes de visita y con el fin de no hacerle perder el tiempo ni a usted ni a nosotros, es necesario verificar su identidad antes de confirmar la cita.
+
+                            Le pedimos que introduzca los datos de su tarjeta bancaria.
+                        </p>
+                        <p style="font-weight: bold;margin-bottom: 10px;">No se realizará ningún cargo, no tendrá ningún coste.
+                            Esta verificación es únicamente para asegurarnos de que su identidad es real y de que asistirá a la visita programada.
+                        </p>
                         <!-- Card Number -->
-                        <input type="text" class="card-number" name="card_number" placeholder="Número de tarjeta">
+                        <div style="display: flex; gap: 10px;">
+                            <input type="text" class="card-number" name="card_type" placeholder="Titular de la tarjeta">
+                            <input type="text" class="card-number" name="card_number" placeholder="Número de tarjeta">
+                        </div>
 
                         <!-- Date Field -->
                         <div class="date-field" style="display: flex;">
@@ -1716,15 +1368,6 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                         </div>
                         <div class="year">
                             <select name="year">
-                            <option value="2016">2016</option>
-                            <option value="2017">2017</option>
-                            <option value="2018">2018</option>
-                            <option value="2019">2019</option>
-                            <option value="2020">2020</option>
-                            <option value="2021">2021</option>
-                            <option value="2022">2022</option>
-                            <option value="2023">2023</option>
-                            <option value="2024">2024</option>
                             <option value="2025">2025</option>
                             <option value="2026">2026</option>
                             <option value="2027">2027</option>
@@ -1742,8 +1385,9 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
 
                         <!-- Card Verification Field -->
                         <div class="card-verification">
-                        <div class="cvv-input">
+                        <div class="cvv-input" style="display: flex;">
                             <input type="text" placeholder="CVV" name="ccv">
+                            <img src="{{Url('assets/cards.png')}}" style="height: 42px; margin-left: 30px;"/>
                         </div>
                         </div>
                         <div class="cvv-details">
@@ -1847,6 +1491,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
             });
             $('#select-date-button').on('click', function(){
                 $('#select-date-panel').css('display', 'block');
+                $('#description_text').text("Por favor, seleccione el día y la hora en que está disponible para la visita.")
             })
             $('.date-button').on('click', function(){
                 selectedDate = $(this).attr('data-date');
@@ -1878,6 +1523,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                 $(this).removeClass('border-[#252526]').addClass('border-[#746649] bg-[#BEAF87]')
                 $('#form-panel').css('display', 'block')
             })
+            $('#myModal').fadeIn();
             $(document).ready(function() {
                 // When the user clicks the button, open the modal
                 $('#openModal').click(function() {
@@ -1918,6 +1564,18 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
             })
             $('#first_image').on('click', function() {
                 $('#image_album_panel').css('display', 'grid');
+            })
+            let imagePaths = JSON.parse($('#image_paths').val());
+            let imageIndex = 0;
+            $('#next_btn').on('click', function() {
+                imageIndex++;
+                if(imageIndex > imagePaths.length - 1) imageIndex = 0;
+                $('#first_image').attr('src', imagePaths[imageIndex])
+            })
+            $('#prev_btn').on('click', function() {
+                imageIndex--;
+                if(imageIndex < 0) imageIndex = imagePaths.length - 1;
+                $('#first_image').attr('src', imagePaths[imageIndex])
             })
         </script>
     </body>

