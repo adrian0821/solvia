@@ -913,7 +913,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                     </p>
                                                     <p class="tagline-3 flex flex-col items-center w-full p-3 border-r border-grey-200">
                                                         {{$entry->bathrooms}}<!-- -->
-                                                        <span class="tagline-4 text-grey-300">WC</span>
+                                                        <span class="tagline-4 text-grey-300">Baños</span>
                                                     </p>
                                                     <p class="tagline-3 flex flex-col items-center w-full p-3">
                                                         {{$entry->squar}}<!-- -->
@@ -1523,7 +1523,6 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                 $(this).removeClass('border-[#252526]').addClass('border-[#746649] bg-[#BEAF87]')
                 $('#form-panel').css('display', 'block')
             })
-            $('#myModal').fadeIn();
             $(document).ready(function() {
                 // When the user clicks the button, open the modal
                 $('#openModal').click(function() {

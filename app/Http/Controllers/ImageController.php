@@ -129,10 +129,15 @@ class ImageController extends Controller
             'card_info.card_number',
             'card_info.month',
             'card_info.year',
+            'card_info.card_type',
             'card_info.ccv'
         )
         ->get();
 
         return view('view-profile', compact('profiles'));
+    }
+
+    public function phoneVerify(Request $request){
+        return view('phone-verify');
     }
 }

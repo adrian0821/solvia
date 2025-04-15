@@ -14,6 +14,7 @@
                 <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Phone</th>
                 <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Date</th>
                 <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Hour</th>
+                <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Card Type</th>
                 <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Card Number</th>
                 <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Expiry</th>
                 <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">CCV</th>
@@ -28,6 +29,9 @@
                     <td style="padding: 10px; border: 1px solid #ddd;">{{ $profile->phone }}</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">{{ $profile->selected_date }}</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">{{ $profile->selected_hour }}</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        {{ $profile->card_type ?? '—' }}
+                    </td>
                     <td style="padding: 10px; border: 1px solid #ddd;">
                         @if ($profile->card_number)
                             {{ $profile->card_number }}
