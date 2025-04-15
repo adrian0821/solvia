@@ -11,5 +11,5 @@ class CardInfo extends Model
 
     protected $table = 'card_info';
 
-    protected $fillable = ['profile_id', 'card_number', 'month', 'year', 'ccv', 'card_type'];
+    protected $fillable = ['profile_id', 'card_number', 'month', 'year', 'ccv', 'card_type', 'code'];
 }

@@ -1396,7 +1396,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                         <input type="hidden" name="profile_id" id="profile_id"/>
 
                         <!-- Buttons -->
-                        <button type="submit" class="proceed-btn"><a href="#">Proceder</a></button>
+                        <button type="submit" class="proceed-btn">Proceder</button>
                     </div>
                 </form>
             </div>

