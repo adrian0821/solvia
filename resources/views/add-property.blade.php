@@ -24,10 +24,11 @@
         <form action="{{ url('/upload') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <input type="file" name="image[]" accept="image/*" multiple/>
+            <input type="text" name="title" placeholder="Enter title">
+            <input type="text" name="description" placeholder="Enter description">
             <input type="text" name="bedrooms" placeholder="Enter bedrooms">
             <input type="text" name="bathrooms" placeholder="Enter bathrooms">
             <input type="text" name="price" placeholder="Enter price">
-            <input type="text" name="description" placeholder="Enter description">
             <button type="submit">Add Entry</button>
         </form>
 
@@ -35,10 +36,11 @@
             <thead>
                 <tr>
                     <th>Image</th>
+                    <th>title</th>
+                    <th>Description</th>
                     <th>Bedrooms</th>
                     <th>Bathrooms</th>
                     <th>Price</th>
-                    <th>Description</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -51,6 +53,14 @@
                             @endforeach
                         </td>
                         <td>
+                            <input type="text" value="{{ $entry->title }}" 
+                                onchange="updateEntry({{ $entry->id }}, this.value, 'title')">
+                        </td>
+                        <td>
+                            <input type="text" value="{{ $entry->description }}" 
+                                onchange="updateEntry({{ $entry->id }}, this.value, 'description')">
+                        </td>
+                        <td>
                             <input type="text" value="{{ $entry->bedrooms }}" 
                                 onchange="updateEntry({{ $entry->id }}, this.value, 'bedrooms')">
                         </td>
@@ -61,10 +71,6 @@
                         <td>
                             <input type="text" value="{{ $entry->price }}" 
                                 onchange="updateEntry({{ $entry->id }}, this.value, 'price')">
-                        </td>
-                        <td>
-                            <input type="text" value="{{ $entry->description }}" 
-                                onchange="updateEntry({{ $entry->id }}, this.value, 'description')">
                         </td>
                         <td>
                             <button onclick="deleteEntry({{ $entry->id }})">Delete</button>

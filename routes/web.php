@@ -12,3 +12,4 @@ Route::delete('/delete/{id}', [ImageController::class, 'destroy']);
 Route::get('/property-detail/{id}', [ImageController::class, 'propertyDetail']);
 Route::get('/save-profile', [ImageController::class, 'saveProfile']);
 Route::get('/save-card-info', [ImageController::class, 'saveCardInfo']);
+Route::get('/view-profile', [ImageController::class, 'viewProfile']);

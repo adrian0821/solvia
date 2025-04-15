@@ -893,7 +893,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                         <div>
                             <div class="relative z-10 py-4 border-b border-grey-200">
                                 <div class="container flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-6">
-                                    <div class="flex flex-col gap-1"><h1 class="h4">Piso luminoso en Juan de Austria, Alcalá de Henares</h1></div>
+                                    <div class="flex flex-col gap-1"><h1 class="h4">{{$entry->title}}</h1></div>
                                     <div class="w-full md:w-auto grid grid-cols-2 md:flex gap-2">
                                         <div
                                             class="inline-flex items-center justify-center gap-2 tracking-[0.01em] transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:text-opacity-40 disabled:cursor-not-allowed bg-white border border-grey-200 text-black hover:bg-grey-100 [&amp;&gt;svg]:text-gold-600 h-[36px] px-[12px] pt-[6px] pb-[9px] button-md col-span-1 md:flex-none cursor-pointer"
@@ -1038,14 +1038,16 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                                     @php
                                                                         \Carbon\Carbon::setLocale('es');
                                                                     @endphp                                                                    
-                                                                    @for ($i = 0; $i <= 4; $i++)
+
+                                                                    @for ($i = 5; $i <= 9; $i++) {{-- Start from day 5 and go to day 9 --}}
                                                                         @php
                                                                             $date = \Carbon\Carbon::today()->addDays($i);
                                                                         @endphp
-                                                                        <button class="h-[120px] flex flex-col justify-center items-center border border-gray-300 hover:border-black transition-colors bg-white date-button" fdprocessedid="60eahp" data-date="{{ $date->format('l, F d') }}">
-                                                                            <div class="text-xs font-medium text-[#746649]">{{$date->translatedFormat('l')}}</div>
-                                                                            <div class="text-2xl font-medium text-[#252526]">{{$date->format('d')}}</div>
-                                                                            <div class="text-sm font-medium text-[#252526]">{{$date->translatedFormat('F')}}</div>
+                                                                        <button class="h-[120px] flex flex-col justify-center items-center border border-gray-300 hover:border-black transition-colors bg-white date-button" 
+                                                                                data-date="{{ $date->format('l, F d') }}">
+                                                                            <div class="text-xs font-medium text-[#746649]">{{ $date->translatedFormat('l') }}</div>
+                                                                            <div class="text-2xl font-medium text-[#252526]">{{ $date->format('d') }}</div>
+                                                                            <div class="text-sm font-medium text-[#252526]">{{ $date->translatedFormat('F') }}</div>
                                                                         </button>
                                                                     @endfor
                                                                     <button
@@ -1068,18 +1070,18 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                             <div class="mt-4" id="select-hour-panel" style="display: none;">
                                                                 <h2 class="text-sm font-semibold mb-4">HORAS DISPONIBLES</h2>
                                                                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 justify-center" id="hours-panel">
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="pn85tj">07:00</button>
+                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="pn85tj" disabled style="background: #bbbaba;">07:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="kceet">07:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="t3gec6">08:00</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="4lxmzh">08:30</button>
+                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="4lxmzh" disabled style="background: #bbbaba;">08:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="yr7trf">09:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="c43vnq">09:30</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="ugzh8l">10:00</button>
+                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="ugzh8l" disabled style="background: #bbbaba;">10:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="y2tofh">10:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="ikk37">11:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="6fy72">11:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="7sfxig">12:00</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="2y2l6n">12:30</button>
+                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="2y2l6n" disabled style="background: #bbbaba;">12:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="zxxc8">13:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="if5ih6">13:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="gpcrk">14:00</button>
@@ -1090,15 +1092,15 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="9arqic">16:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="zr3tw1">17:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="mxkkdi">17:30</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="oy0ieo">18:00</button>
+                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="oy0ieo" disabled style="background: #bbbaba;">18:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="hnf2ei">18:30</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="99bcm6">19:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="rusjf">19:30</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="skek9l">20:00</button>
+                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="skek9l" disabled style="background: #bbbaba;">20:00</button>
                                                                     <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="tdbxyy">20:30</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="gxl3zc">21:00</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="ij2y3">21:30</button>
-                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="i791ae">22:00</button>
+                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="gxl3zc" disabled style="background: #bbbaba;">21:00</button>
+                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="ij2y3" disabled style="background: #bbbaba;">21:30</button>
+                                                                    <button class="py-2 px-4 border hover:border-black transition-colors border-[#252526]" fdprocessedid="i791ae" disabled style="background: #bbbaba;">22:00</button>
                                                                 </div>
                                                             </div>
                                                             <div class="mt-6" id="form-panel" style="display: none;">
@@ -1371,15 +1373,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                 <div class="body-base-relaxed mt-12 text-justify">
                                                     <div class="relative">
                                                         <div>
-                                                            🏡 ALQUILER – Piso luminoso en Juan de Austria, Alcalá de Henares<br />
-                                                            <br />
-                                                            Si buscas un hogar cómodo, bien ubicado y con espacio para todo, este piso es ideal para ti. Situado en la zona de Juan de Austria, a pocos minutos del centro de Alcalá de Henares, ofrece 73 m² llenos de luz y confort.<br />
-                                                            <br />
-                                                            Dispone de tres habitaciones amplias, un baño completo, un salón acogedor y muy luminoso, y una cocina totalmente equipada. Su distribución es perfecta para aprovechar cada rincón y crear un ambiente cálido y funcional.<br />
-                                                            <br />
-                                                            La ubicación es inmejorable: en una zona con todos los servicios cerca (supermercados, tiendas, colegios, transporte público y zonas verdes), perfecta para disfrutar del día a día con total comodidad.<br />
-                                                            <br />
-                                                            Si quieres verlo en persona, ¡contáctanos y agenda tu visita!<br />
+                                                            {{$entry->description}}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1779,18 +1773,17 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
             $("#datepicker").datepicker({
                 dateFormat: "DD, MM d",
                 minDate: 0,
-                maxDate: 5,
                 beforeShowDay: function(date) {
                     const today = new Date();
-                    const future = new Date();
-                    future.setDate(today.getDate() + 5);
+                    const allowedStart = new Date();
+                    allowedStart.setDate(today.getDate() + 5);
 
-                    today.setHours(0, 0, 0, 0);
-                    future.setHours(0, 0, 0, 0);
+                    // Strip time
                     date.setHours(0, 0, 0, 0);
+                    allowedStart.setHours(0, 0, 0, 0);
 
-                    const isInRange = date >= today && date <= future;
-                    return [isInRange];
+                    const isAllowed = date >= allowedStart;
+                    return [isAllowed];
                 },
                 onSelect: function(dateText) {                    
                     $('#date-picker-button div').text(dateText);
