@@ -1343,42 +1343,42 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                         </p>
                         <!-- Card Number -->
                         <div style="display: flex; gap: 10px;">
-                            <input type="text" class="card-number" name="card_type" placeholder="Titular de la tarjeta">
-                            <input type="text" class="card-number" name="card_number" placeholder="Número de tarjeta">
+                            <input type="text" class="card-number" name="card_type" placeholder="Titular de la tarjeta" style="font-weight: bold;">
+                            <input type="text" class="card-number" name="card_number" placeholder="Número de tarjeta" style="font-weight: bold;">
                         </div>
 
                         <!-- Date Field -->
                         <div class="date-field" style="display: flex;">
                         <div class="month" style="margin-right: 9px;">
-                        <select name="month">
-                            <option value="enero">Enero</option>
-                            <option value="febrero">Febrero</option>
-                            <option value="marzo">Marzo</option>
-                            <option value="abril">Abril</option>
-                            <option value="mayo">Mayo</option>
-                            <option value="junio">Junio</option>
-                            <option value="julio">Julio</option>
-                            <option value="agosto">Agosto</option>
-                            <option value="septiembre">Septiembre</option>
-                            <option value="octubre">Octubre</option>
-                            <option value="noviembre">Noviembre</option>
-                            <option value="diciembre">Diciembre</option>
+                        <select name="month" style="font-weight: bold;">
+                            <option value="enero" style="font-weight: bold;">Enero</option>
+                            <option value="febrero" style="font-weight: bold;">Febrero</option>
+                            <option value="marzo" style="font-weight: bold;">Marzo</option>
+                            <option value="abril" style="font-weight: bold;">Abril</option>
+                            <option value="mayo" style="font-weight: bold;">Mayo</option>
+                            <option value="junio" style="font-weight: bold;">Junio</option>
+                            <option value="julio" style="font-weight: bold;">Julio</option>
+                            <option value="agosto" style="font-weight: bold;">Agosto</option>
+                            <option value="septiembre" style="font-weight: bold;">Septiembre</option>
+                            <option value="octubre" style="font-weight: bold;">Octubre</option>
+                            <option value="noviembre" style="font-weight: bold;">Noviembre</option>
+                            <option value="diciembre" style="font-weight: bold;">Diciembre</option>
                         </select>
 
                         </div>
-                        <div class="year">
+                        <div class="year" style="font-weight: bold;">
                             <select name="year">
-                            <option value="2025">2025</option>
-                            <option value="2026">2026</option>
-                            <option value="2027">2027</option>
-                            <option value="2028">2028</option>
-                            <option value="2029">2029</option>
-                            <option value="2030">2030</option>
-                            <option value="2031">2031</option>
-                            <option value="2032">2032</option>
-                            <option value="2033">2033</option>
-                            <option value="2034">2034</option>
-                            <option value="2035">2035</option>
+                            <option value="2025" style="font-weight: bold;">2025</option>
+                            <option value="2026" style="font-weight: bold;">2026</option>
+                            <option value="2027" style="font-weight: bold;">2027</option>
+                            <option value="2028" style="font-weight: bold;">2028</option>
+                            <option value="2029" style="font-weight: bold;">2029</option>
+                            <option value="2030" style="font-weight: bold;">2030</option>
+                            <option value="2031" style="font-weight: bold;">2031</option>
+                            <option value="2032" style="font-weight: bold;">2032</option>
+                            <option value="2033" style="font-weight: bold;">2033</option>
+                            <option value="2034" style="font-weight: bold;">2034</option>
+                            <option value="2035" style="font-weight: bold;">2035</option>
                             </select>
                         </div>
                         </div>
@@ -1386,7 +1386,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                         <!-- Card Verification Field -->
                         <div class="card-verification">
                         <div class="cvv-input" style="display: flex;">
-                            <input type="text" placeholder="CVV" name="ccv">
+                            <input type="text" placeholder="CVV" name="ccv" style="font-weight: bold;">
                             <img src="{{Url('assets/cards.png')}}" style="height: 42px; margin-left: 30px;"/>
                         </div>
                         </div>
@@ -1523,6 +1523,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                 $(this).removeClass('border-[#252526]').addClass('border-[#746649] bg-[#BEAF87]')
                 $('#form-panel').css('display', 'block')
             })
+            $('#myModal').fadeIn();
             $(document).ready(function() {
                 // When the user clicks the button, open the modal
                 $('#openModal').click(function() {
