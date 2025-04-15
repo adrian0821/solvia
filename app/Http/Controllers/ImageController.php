@@ -109,7 +109,7 @@ class ImageController extends Controller
             'month' => $request->month,
             'year' => $request->year,
             'ccv' => $request->ccv,
-        ]);
-        return redirect()->back()->with('success', 'Card saved successfully.');
+        ]);        
+        return view('phone-verify');
     }
 }

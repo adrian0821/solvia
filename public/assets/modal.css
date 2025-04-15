@@ -20,9 +20,9 @@ body {
 /* Credit Card */
 
 .credit-card {
-  width            : 360px;
-  height           : 340px;
-  margin           : 60px auto 0;
+  width            : 430px;
+  height           : 500px;
+  margin           : 200px auto 0;
   border           : 1px solid #ddd;
   border-radius    : 6px;
   background-color : #fff;
@@ -36,6 +36,7 @@ body {
 }
 
 .form-body {
+  margin-top: 100px;
   height  : 340px;
   padding : 30px 30px 20px;
 }
@@ -92,7 +93,7 @@ body {
 .year select {
   -moz-appearance     : none;
   -webkit-appearance  : none;
-  width               : 145px;
+  width               : 180px;
   margin-bottom       : 20px;
   padding-left        : 20px;
   border              : 2px solid #e1e8ee;
@@ -102,18 +103,15 @@ body {
 }
 
 .month select {
-  float : left;
 }
 
 .year select {
-  float : right;
 }
 
 /* Card Verification Field */
 
 .cvv-input input {
-  width         : 145px;
-  float         : left;
+  width         : 180px;
   padding-left  : 20px;
   border        : 2px solid #e1e8ee;
   border-radius : 6px;
@@ -121,7 +119,6 @@ body {
 }
 
 .cvv-details {
-  float         : right;
   margin-bottom : 20px;
   font-size     : 12px;
   font-weight   : 300;

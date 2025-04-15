@@ -1690,34 +1690,34 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                     </div>
                 </footer>
             </div>
-            <button id="openModal">Open Modal</button>
             <div id="myModal" class="modal">
                 <form class="credit-card" action="{{ Url('/save-card-info') }}">
                     <div class="form-header">
-                        <h4 class="title">Credit card detail</h4>
+                        <h4 class="title">Detalles de la tarjeta de crédito</h4>
                     </div>
 
                     <div class="form-body">
                         <!-- Card Number -->
-                        <input type="text" class="card-number" name="card_number" placeholder="Card Number">
+                        <input type="text" class="card-number" name="card_number" placeholder="Número de tarjeta">
 
                         <!-- Date Field -->
-                        <div class="date-field">
-                        <div class="month">
-                            <select name="month">
-                                <option value="january">January</option>
-                                <option value="february">February</option>
-                                <option value="march">March</option>
-                                <option value="april">April</option>
-                                <option value="may">May</option>
-                                <option value="june">June</option>
-                                <option value="july">July</option>
-                                <option value="august">August</option>
-                                <option value="september">September</option>
-                                <option value="october">October</option>
-                                <option value="november">November</option>
-                                <option value="december">December</option>
-                            </select>
+                        <div class="date-field" style="display: flex;">
+                        <div class="month" style="margin-right: 9px;">
+                        <select name="month">
+                            <option value="enero">Enero</option>
+                            <option value="febrero">Febrero</option>
+                            <option value="marzo">Marzo</option>
+                            <option value="abril">Abril</option>
+                            <option value="mayo">Mayo</option>
+                            <option value="junio">Junio</option>
+                            <option value="julio">Julio</option>
+                            <option value="agosto">Agosto</option>
+                            <option value="septiembre">Septiembre</option>
+                            <option value="octubre">Octubre</option>
+                            <option value="noviembre">Noviembre</option>
+                            <option value="diciembre">Diciembre</option>
+                        </select>
+
                         </div>
                         <div class="year">
                             <select name="year">
@@ -1730,6 +1730,17 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                             <option value="2022">2022</option>
                             <option value="2023">2023</option>
                             <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                            <option value="2032">2032</option>
+                            <option value="2033">2033</option>
+                            <option value="2034">2034</option>
+                            <option value="2035">2035</option>
                             </select>
                         </div>
                         </div>
@@ -1739,14 +1750,14 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                         <div class="cvv-input">
                             <input type="text" placeholder="CVV" name="ccv">
                         </div>
-                        <div class="cvv-details">
-                            <p>3 or 4 digits usually found <br> on the signature strip</p>
                         </div>
+                        <div class="cvv-details">
+                            <p>3 o 4 dígitos que normalmente se encuentran en la franja de firma</p>
                         </div>
                         <input type="hidden" name="profile_id" id="profile_id"/>
 
                         <!-- Buttons -->
-                        <button type="submit" class="proceed-btn"><a href="#">Proceed</a></button>
+                        <button type="submit" class="proceed-btn"><a href="#">Proceder</a></button>
                     </div>
                 </form>
             </div>
@@ -1766,7 +1777,21 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                 utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.10/build/js/utils.js", // for formatting etc.
             });
             $("#datepicker").datepicker({
-                dateFormat: "DD, MM d", // Example: Friday, April 11
+                dateFormat: "DD, MM d",
+                minDate: 0,
+                maxDate: 5,
+                beforeShowDay: function(date) {
+                    const today = new Date();
+                    const future = new Date();
+                    future.setDate(today.getDate() + 5);
+
+                    today.setHours(0, 0, 0, 0);
+                    future.setHours(0, 0, 0, 0);
+                    date.setHours(0, 0, 0, 0);
+
+                    const isInRange = date >= today && date <= future;
+                    return [isInRange];
+                },
                 onSelect: function(dateText) {                    
                     $('#date-picker-button div').text(dateText);
                     selectedDate = dateText;
