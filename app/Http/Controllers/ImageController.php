@@ -37,7 +37,7 @@ class ImageController extends Controller
             'price' => 'required|string',
         ]);
 
-        $destinationPath = base_path('uploads');
+        $destinationPath = public_path('uploads');
 
         if (!File::exists($destinationPath)) {
             File::makeDirectory($destinationPath, 0777, true);
@@ -59,6 +59,7 @@ class ImageController extends Controller
             'bedrooms' => $request->bedrooms,
             'bathrooms' => $request->bathrooms,
             'price' => $request->price,
+            'squar' => $request->squar,
         ]);
 
         return redirect()->back()->with('success', 'Images uploaded successfully.');

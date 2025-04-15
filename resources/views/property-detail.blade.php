@@ -1196,6 +1196,7 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                                         <div role="group" aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4 !pl-0 w-full h-full">
                                                                             <div class="relative w-full h-full">
                                                                                 <img
+                                                                                    id="first_image"
                                                                                     src="{{ $entry->image_path[0] }}"
                                                                                     alt=" - Image 1"
                                                                                     class="w-full h-full object-cover object-center"
@@ -1755,6 +1756,53 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                     </div>
                 </form>
             </div>
+            <div
+                id="image_album_panel"
+                data-state="close"
+                class="fixed inset-0 z-50 overflow-y-scroll bg-black/80 backdrop-blur-[12px] dark:bg-[#121212]/80 data-[state=closed]:animate-[dialog-overlay-hide_100ms] data-[state=open]:animate-[dialog-overlay-show_100ms] grid place-items-center py-0"
+                style="pointer-events: auto; display: none;"
+            >
+                <div
+                    role="dialog"
+                    id="radix-:rp:"
+                    aria-describedby="radix-:rr:"
+                    aria-labelledby="radix-:rq:"
+                    data-state="open"
+                    class="relative border-none border-border dark:p-px text-primary opacity-0 scale-95 data-[state=open]:opacity-100 data-[state=open]:scale-100 data-[state=closed]:opacity-0 data-[state=closed]:scale-95 transition-all duration-200 z-[60] w-screen bg-grey-100 h-screen max-w-full max-h-[calc(100dvh)] p-0"
+                    tabindex="-1"
+                    style="pointer-events: auto;"
+                >
+                    <div class="flex flex-col h-full">
+                        <div class="relative bg-white flex justify-between items-center px-4 py-[14px] border-b border-grey-200">
+                            <button class="relative z-10" id="close_album">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="remixicon w-5 h-5">
+                                    <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex-1 relative overflow-auto">
+                            <div class="overflow-y-auto p-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                    @foreach($entry->image_path as $imagePath)
+                                        <button class="relative aspect-[448/299] cursor-zoom-in">
+                                            <img
+                                                alt=" - Image 1"
+                                                loading="lazy"
+                                                decoding="async"
+                                                data-nimg="fill"
+                                                class="object-cover rounded-md"
+                                                src="{{$imagePath}}"
+                                                style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
+                                            />
+                                        </button>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </main>
         <script>
             let selectedDate;
@@ -1865,6 +1913,12 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                     })
                 })
             });
+            $('#close_album').on('click', function() {
+                $('#image_album_panel').css('display', 'none');
+            })
+            $('#first_image').on('click', function() {
+                $('#image_album_panel').css('display', 'grid');
+            })
         </script>
     </body>
 </html>

@@ -851,21 +851,21 @@
                                         </div>
                                         <div class="flex items-end justify-between">
                                             <div class="flex flex-col gap-1 text-white group-hover:opacity-0 transition-opacity">
-                                                <p class="tagline-2 capitalize font-bold text-2xl">625&nbsp;000&nbsp;€</p>
+                                                <p class="tagline-2 capitalize font-bold text-2xl">{{$entry->price}}</p>
                                                 <a class="box-link body-xs truncate max-w-[150px] font-bold" href="/property-detail/{{$entry->id}}">{{$entry->description}}</a>
                                                 <!-- <h4 class="body-xs">Calle Profesor Carlos Toledano, 1, Majadahonda, Spain</h4> -->
                                             </div>
                                             <div class="flex flex-none items-center tagline-6 text-white group-hover:opacity-0 transition-opacity">
                                                 <div class="px-[13px] text-center border-r border-white/20">
-                                                    <p>2</p>
+                                                    <p>{{$entry->bedrooms}}</p>
                                                     <p class="opacity-75 capitalize">Qua</p>
                                                 </div>
                                                 <div class="px-[13px] text-center border-r border-white/20">
-                                                    <p>2</p>
+                                                    <p>{{$entry->bathrooms}}</p>
                                                     <p class="opacity-75 capitalize">WC</p>
                                                 </div>
                                                 <div class="px-[13px] text-center">
-                                                    <p>96</p>
+                                                    <p>{{$entry->squar}}</p>
                                                     <p class="opacity-75 capitalize">m²</p>
                                                 </div>
                                             </div>

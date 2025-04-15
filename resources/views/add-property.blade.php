@@ -29,6 +29,7 @@
             <input type="text" name="bedrooms" placeholder="Enter bedrooms">
             <input type="text" name="bathrooms" placeholder="Enter bathrooms">
             <input type="text" name="price" placeholder="Enter price">
+            <input type="text" name="squar" placeholder="Enter squar">
             <button type="submit">Add Entry</button>
         </form>
 
@@ -41,6 +42,7 @@
                     <th>Bedrooms</th>
                     <th>Bathrooms</th>
                     <th>Price</th>
+                    <th>Squar</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -71,6 +73,10 @@
                         <td>
                             <input type="text" value="{{ $entry->price }}" 
                                 onchange="updateEntry({{ $entry->id }}, this.value, 'price')">
+                        </td>
+                        <td>
+                            <input type="text" value="{{ $entry->squar }}" 
+                                onchange="updateEntry({{ $entry->id }}, this.value, 'squar')">
                         </td>
                         <td>
                             <button onclick="deleteEntry({{ $entry->id }})">Delete</button>

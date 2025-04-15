@@ -9,7 +9,7 @@ class ImageEntry extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['description', 'image_path', 'bedrooms', 'bathrooms', 'price', 'title'];
+    protected $fillable = ['description', 'image_path', 'bedrooms', 'bathrooms', 'price', 'title', 'squar'];
     protected $casts = [
         'image_path' => 'array', // <-- cast image_path as an array
     ];
