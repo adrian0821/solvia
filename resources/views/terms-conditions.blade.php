@@ -738,15 +738,7 @@
                                         En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, se detallan a continuación los datos de información general del sitio web y de
                                         la titularidad del mismo: Del presente sitio web y su contenido es responsable:<!-- -->
                                         <b>Solvia - Gestión y Explotación de Franquicias, S.L.</b>
-                                        <!-- -->B65222333 Domicilio Social: Calle Núñez de Balboa, 116 3a Planta 1o, 28006 Madrid España, Inscrita en el Registro Mercantil de BARCELONA e-mail:
-                                        <a href="mailto:general@century21.es" class="link text-blue-200">general@century21.es</a>
-                                        <!-- -->| Pueden ponerse en contacto con nosotros en el domicilio reseñado, llamando al teléfono 0034 91 546 4021 (de lunes a viernes, en horario 09:30 a 18:30 horas), enviando un correo electrónico a: Asuntos
-                                        generales:<!-- -->
-                                        <a href="mailto:general@century21.es" class="link text-blue-200">general@century21.es</a>
-                                        <!-- -->| Reclamaciones:<!-- -->
-                                        <a href="mailto:sarf@century21.es" class="link text-blue-200">sarf@century21.es</a>
-                                        <!-- -->| Protección de Datos:<!-- -->
-                                        <a href="mailto:protecciondatos@century21.es" class="link text-blue-200">protecciondatos@century21.es</a>
+                                        <!-- -->B65222333 Domicilio Social: Calle Núñez de Balboa, 116 3a Planta 1o, 28006 Madrid España, Inscrita en el Registro Mercantil de BARCELONA
                                     </p>
                                     <h2 class="tagline-3 mt-12 mb-6">Términos y condiciones de uso</h2>
                                     <p class="body-base-relaxed">
