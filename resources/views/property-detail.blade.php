@@ -26,7 +26,7 @@
         <link rel="preload" as="image" href="https://cdnstorage.century21.pt/render/image/public/external-cdn/24805e7b-aaf1-4980-9a3b-c12b047f099a/WhatsApp%20Image%202025-04-01%20at%2019.33.25%20(4).jpeg" />
         <link rel="preload" as="image" href="https://cdnstorage.century21.pt/render/image/public/external-cdn/24805e7b-aaf1-4980-9a3b-c12b047f099a/WhatsApp%20Image%202025-04-01%20at%2019.33.25%20(3).jpeg" />
         <meta name="test" content="test" />
-        <title>Piso luminoso en Juan de Austria, Alcalá de Henares | C0026-02375</title>
+        <title>Solvia</title>
         <meta
             name="description"
             content="🏡 ALQUILER – Piso luminoso en Juan de Austria, Alcalá de Henares

@@ -3,44 +3,42 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-        <link rel="preload" as="image" href="https://cdnstorage.century21.pt/render/image/public/external-cdn/home-hero.webp" fetchpriority="high" />
-        <link rel="preload" as="script" fetchpriority="low" href="/_next/static/chunks/webpack-78fef9e04e115abb.js?dpl=dpl_9TZp8RW5Rzv7o5SAJ4MByAp5Eic8" />
         <script src="https://rules.quantcount.com/rules-p-CaKKUPesYm6WM.js" async=""></script>
         <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
         <script type="text/javascript" async="" src="https://secure.quantserve.com/quant.js"></script>
         <script
             type="text/javascript"
             async=""
-            src="https://www.googletagmanager.com/gtag/js?id=G-P1FW6JSWN7&amp;l=dataLayer&amp;cx=c&amp;gtm=45He53p4v78628408za200&amp;tag_exp=102482433~102788824~102803279~102813109~102887799~102926062"
+            src="https://www.googletagmanager.com/gtag/js?id=G-P1FW6JSWN7&amp;l=dataLayer&amp;cx=c&amp;gtm=45He54f0v78628408za200&amp;tag_exp=102509683~102803279~102813109~102887800~102926062~103027016~103051953~103055465~103077950~103101747~103101749"
         ></script>
         <link rel="preload" href="https://www.googletagmanager.com/gtm.js?id=GTM-P89CFVV" as="script" />
-        <title>SOLVIA ® España | Encuentre su casa.</title>
-        <meta name="description" content="Encuentre su casa ideal en España con SOLVIA. Compre, alquile o venda su inmueble con los mejores profesionales del mercado inmobiliario." />
-        <link rel="canonical" href="https://www.century21.es" />
-        <meta property="og:title" content="SOLVIA® España | Encuentre su casa." />
-        <meta property="og:description" content="Encuentre su casa ideal en España con SOLVIA. Compre, alquile o venda su inmueble con los mejores profesionales del mercado inmobiliario." />
-        <meta property="og:url" content="https://www.century21.es" />
-        <meta property="og:site_name" content="SOLVIA® España | Encuentre su casa." />
+        <title>CENTURY 21® España | Encuentre su casa.</title>
+        <meta name="description" content="Encuentre su casa ideal en España con CENTURY 21. Compre, alquile o venda su inmueble con los mejores profesionales del mercado inmobiliario." />
+        <link rel="canonical" href="https://century21.es" />
+        <meta property="og:title" content="CENTURY 21® España | Encuentre su casa." />
+        <meta property="og:description" content="Encuentre su casa ideal en España con CENTURY 21. Compre, alquile o venda su inmueble con los mejores profesionales del mercado inmobiliario." />
+        <meta property="og:url" content="https://century21.es" />
+        <meta property="og:site_name" content="CENTURY 21® España | Encuentre su casa." />
         <meta property="og:locale" content="es_ES" />
-        <meta property="og:image" content="https://www.century21.es/home-hero.webp" />
+        <meta property="og:image" content="https://century21.es/home-hero.webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="SOLVIA® España | Encuentre su casa." />
+        <meta property="og:image:alt" content="CENTURY 21® España | Encuentre su casa." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="SOLVIA® España | Encuentre su casa." />
-        <meta name="twitter:description" content="Encuentre su casa ideal en España con SOLVIA. Compre, alquile o venda su inmueble con los mejores profesionales del mercado inmobiliario." />
-        <meta name="twitter:image" content="https://www.century21.es/home-hero.webp" />
+        <meta name="twitter:title" content="CENTURY 21® España | Encuentre su casa." />
+        <meta name="twitter:description" content="Encuentre su casa ideal en España con CENTURY 21. Compre, alquile o venda su inmueble con los mejores profesionales del mercado inmobiliario." />
+        <meta name="twitter:image" content="https://century21.es/home-hero.webp" />
         <link rel="icon" href="assets/favicon.svg" />
         <link rel="stylesheet" href="assets/style.css" data-precedence="next" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css" />
+        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
         <meta name="next-size-adjust" />
         <meta name="test" content="test" />
-        <script src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js?dpl=dpl_9TZp8RW5Rzv7o5SAJ4MByAp5Eic8" nomodule=""></script>
-        <link rel="preload" href="/_next/static/media/1340f29d070bac2f-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
-        <link rel="preload" href="/_next/static/media/42ca9a2dc174b9b9-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
-        <link rel="preload" href="/_next/static/media/582cea9dd8b2ac63-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
-        <link rel="preload" href="/_next/static/media/6d2fbad24250167c-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
-        <link rel="preload" href="/_next/static/media/7ed673fa2d042cbf-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
         <style type="text/css">
             :where(html[dir="ltr"]),
             :where([data-sonner-toaster][dir="ltr"]) {
@@ -576,7 +574,7 @@
             }
         </style>
     </head>
-    <body class="__variable_f40aa8 __variable_1ad1ac __variable_ea16cd __variable_c03330 __variable_33a174 font-oakes antialiased" id="website" style="overflow: unset;background-color: #e7e7e7;">
+    <body class="__variable_f40aa8 __variable_1ad1ac __variable_ea16cd __variable_c03330 __variable_33a174 font-oakes antialiased" id="website" style="overflow: unset;">
         <script>
             !(function () {
                 try {
@@ -604,7 +602,7 @@
             })();
         </script>
         <main>
-            <div class="flex flex-col min-h-screen justify-between">
+            <div class="flex flex-col min-h-screen justify-between">                
                 @include('components.header')
                 <div class="lg:hidden fixed inset-x-0 top-[64px] w-full h-[calc(100%-64px)] bg-grey-600 z-[9999] border-t border-grey-500 transition-all duration-150 overflow-hidden opacity-0 invisible">
                     <nav class="flex flex-col justify-between h-full p-4 overflow-y-auto">
@@ -719,255 +717,169 @@
                     </nav>
                 </div>
                 <div class="flex-1">
-                    <div class="border-b border-grey-200 py-20">
-                        <div class="container">
-                            <div class="site-grid">
-                                <div class="col-span-4 lg:col-span-6 text-center md:col-span-4 lg:col-start-4">
-                                    <p class="tagline-5 text-black mb-6">Solvia® ESPAÑA</p>
-                                    <h1 class="h2">Términos &amp; Condiciones</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="py-12">
                         <div class="container">
-                            <div class="site-grid text-justify">
-                                <div class="col-span-4 lg:col-span-6 lg:col-start-4">
-                                    <h2 class="h3 mb-6">AVISO LEGAL Y CONDICIONES DE USO DEL SITIO WEB</h2>
-                                    <p class="body-base-relaxed">
-                                        En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, se detallan a continuación los datos de información general del sitio web y de
-                                        la titularidad del mismo: Del presente sitio web y su contenido es responsable:<!-- -->
-                                        <b>Solvia - Gestión y Explotación de Franquicias, S.L.</b>
-                                        <!-- -->B65222333 Domicilio Social: Calle Núñez de Balboa, 116 3a Planta 1o, 28006 Madrid España, Inscrita en el Registro Mercantil de BARCELONA
+                            <div class="site-grid">
+                                <img
+                                    alt="Contactar CENTURY 21 Portugal"
+                                    loading="lazy"
+                                    width="1000"
+                                    height="1000"
+                                    decoding="async"
+                                    data-nimg="1"
+                                    class="col-span-4 order-2 aspect-[3/2] object-cover lg:col-span-5 lg:order-1 lg:aspect-auto"
+                                    style="color: transparent;"
+                                    src="{{Url('assets/contact-us.webp')}}"
+                                />
+                                <div class="col-span-4 order-1 mb-12 lg:mb-0 lg:order-2 lg:col-start-7 lg:col-span-5 flex flex-col justify-center items-start">
+                                    <p class="tagline-5 text-black">
+                                        Solvia
                                     </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">Términos y condiciones de uso</h2>
-                                    <p class="body-base-relaxed">
-                                        El acceso y utilización de este sitio web atribuye a la persona visitante la condición de usuaria. Ello supone la persona usuaria acepta las condiciones de uso vigentes en cada momento y se compromete a hacer un uso
-                                        adecuado de los contenidos del sitio web y a observar y cumplir rigurosamente cuanto se disponga en este aviso y en las normas que sean de aplicación. Asimismo la persona usuaria se compromete a: 1) Suministrar
-                                        información veraz sobre los datos de registro y mantener los mismos actualizados; 2) No difundir contenidos contrarios a la ley o a la dignidad de la persona; que sean discriminatorios por razón de nacimiento, raza,
-                                        sexo, religión, opinión o cualquier otra condición o circunstancia personal o social; o que, de cualquier modo, sean contrarios a la ley y al orden público; y cualesquiera otros que, a juicio de Solvia
-                                        , sean inadecuados para su publicación. Solvia se reserva el derecho a efectuar las modificaciones que estime convenientes, añadiendo, cambiando o eliminando contenidos o servicios prestados a través
-                                        del sitio web; así como el de retirar cualquier aportación o comentario que contravenga las reglas descritas anteriormente. Solvia no se hará responsable en ningún caso de las opiniones vertidas por
-                                        usuarios/as a través de las herramientas de participación ofrecidas por el sitio web. El sitio web requiere que las personas usuarias se inscriban, registren datos personales o rellenen formularios. El sitio web
-                                        ofrece espacios para recibir y responder comentarios u otro sistema para la interacción de los usuarios. El acceso al sitio web es libre y gratuito en todas sus partes, contenidos, etc. La web no está pensada para
-                                        uso por personas que sean menores de edad. La persona usuaria declara, bajo su propia responsabilidad, ser mayor de edad y disponer de la capacidad de obrar suficiente para vincularse a las presentes condiciones.
-                                    </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">Política de privacidad y protección de datos<!-- --></h2>
-                                    <p class="body-base-relaxed">
-                                        En cumplimiento de lo dispuesto por el Reglamento 2016/679, del Parlamento Europeo y del Consejo, de 27 de abril de 2016 y de la ley orgánica 2/2018 de 5 de Diciembre de protección de datos personales y garantía de
-                                        los derechos digitales le informamos de que los datos personales que nos proporciona se incorporan a ficheros y tratamientos de los que es responsable, Solvia cuyos datos identificativos y registrales
-                                        encabezan este aviso legal. Solvia, a través de los formularios que pone a disposición en esta web, puede recopilar información personal con la finalidad de adecuar nuestras ofertas comerciales a sus
-                                        peticiones para poder ofrecerle un servicio más personalizado y eficaz. En este sitio web se recopilan los datos siguientes: nombre de usuario y contraseña, nombre y apellidos, dirección postal y de correo
-                                        electrónico, número de teléfono, localidad y provincia de residencia y otros identificativos. La persona usuaria proporciona la información solicitada voluntariamente. La negativa a suministrarla tiene, como única
-                                        consecuencia, no recibir información ajustada a sus preferencias ni los servicios que ofrece el sitio web. Así mismo le informamos de que sus datos personales pueden ser cedidos a las empresas que componen la red de
-                                        Franquicias y Agentes de Solvia con los mismos fines. Cada oficina es jurídica y financieramente independiente. Al cumplimentar los datos personales solicitados y marcar la casilla correspondiente la persona
-                                        usuaria acepta de modo expreso e inequívoco que sus datos personales sean tratados por Solvia con los siguientes fines: Ofrecerle la mejor experiencia de (navegación, compra, etc.); Gestionar su cuenta
-                                        en Solvia; Permitirnos elaborar, perfeccionar, gestionar, proporcionar y mejorar nuestros servicios, elaboración de estadísticas de uso; Contactar con el usuario en caso de que se produzca cualquier incidencia en
-                                        el servicio contratado; Atender las consultas del usuário; Enviar al usuario comunicaciones comerciales por cualquier medio que nos haya facilitado; Permitir la participación de la persona interesada en procesos de
-                                        selección de agentes o recibir información sobre la franquicia. Solvia, en cuanto responsable tratamiento de los datos de carácter personal, está obligada a guardar secreto profesional respecto de todos
-                                        ellos así como a guardarlos, obligaciones que subsistirán aun después de finalizar las relaciones del usuario con Solvia. Podrá ejercitar los derechos de acceso, rectificación, limitación, supresión,
-                                        cancelación, portabilidad y oposición y revocar el consentimiento prestado, dirigiéndose por escrito con copia de su DNI, a la atención del delegado de protección de datos, a la dirección indicada en el
-                                        encabezamiento de este escrito.
-                                    </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">Política de cookies</h2>
-                                    <p class="body-base-relaxed">Esta página web emplea cookies. Existe un apartado específico, en el que se informa de su existencia, su naturaleza y la manera de desactivarlas o limitarlas.</p>
-                                    <h2 class="tagline-3 mt-12 mb-6">Política de enlaces</h2>
-                                    <p class="body-base-relaxed">
-                                        El sitio web puede contener enlaces a otros sitios web con políticas de privacidad diferentes a la de éste. Solvia no se hace responsable del contenido o prácticas de los sitios enlazados y se
-                                        recomienda al usuario la lectura detallada de la política de privacidad de cualquier sitio web al que acceda desde éste.
-                                    </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">Propiedad intelectual e industrial</h2>
-                                    <p class="body-base-relaxed">
-                                        Este sitio web es propiedad de Solvia. La denominación, el diseño y los logotipos que componen este sitio web son marcas debidamente registradas. Su uso indebido podrá ser perseguido de conformidad con
-                                        la legislación vigente. Los derechos de propiedad intelectual y marcas de terceros están destacados y el usuario debe respetarlos en cualquier caso. Queda prohibido reproducir, comunicar públicamente, distribuir,
-                                        ceder o transmitir, modificar o suprimir la información, contenido u advertencias del sitio web, salvo autorización previa, expresa y escrita de Solvia.
-                                    </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">Normativa aplicada</h2>
-                                    <p class="body-base-relaxed">
-                                        Reglamento UE 2016/679, de 27 Abr. (protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE
-                                        -Reglamento general de protección de datos-) y ley orgánica 3/2018 de 5 de diciembre de protección de datos personales y garantía de los derechos digitales. Ley de servicios de la sociedad de la información y
-                                        comercio electrónico.
-                                    </p>
-                                    <br />
-                                    <h2 class="h3 mb-6">DECLARACIÓN DE PRIVACIDAD Solvia<!-- --></h2>
-                                    <h2 class="tagline-3 mt-12 mb-6">¿QUIÉN ES EL RESPONSABLE DEL TRATAMIENTO DE SUS DATOS?<!-- --></h2>
-                                    <p class="body-base-relaxed">Solvia - Gestión y Explotación de Franquicias, S.L.</p>
-                                    <h2 class="tagline-3 mt-12 mb-6">¿CON QUÉ FINALIDAD TRATAMOS SUS DATOS PERSONALES?<!-- --></h2>
-                                    <p class="body-base-relaxed">
-                                        Conforme con lo dispuesto en el Reglamento UE 679/2026 y en la Ley orgánica 3/2018 de 5 de diciembre de protección de datos personales y garantía de los derechos digitales, le informamos de que los datos de carácter
-                                        personal que nos facilita y aquellos que se generan durante el desarrollo de relación con usted, son tratados con las siguientes finalidades: - La gestión contable, fiscal y administrativa, el mantenimiento de la
-                                        relación comercial y el envío de comunicaciones para facilitar el contacto y el mantenimiento de la relación, por cualquier medio que nos haya proporcionado. - La gestión de contactos, la realización de acciones de
-                                        comunicación comercial y la respuesta a consultas y sugerencias. - La tramitación de encargos y solicitudes. - Permitir la participación de la persona interesada en procesos de selección de agentes y/o franquiciados.
-                                        - Facilitar la comprobación de la solvencia económica, financiera y comercial de los candidatos y franquiciados. - La divulgación y difusión de las actividades de la entidad, y el envío de comunicaciones comerciales
-                                        por cualquier medio que nos haya proporcionado. - Permitir la geolocalización del dispositivo en el que se ha instalado La videovigilancia de las instalaciones.<!-- -->
-                                    </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">¿Cuánto tiempo conservaremos sus datos?<!-- --></h2>
-                                    <p class="body-base-relaxed">
-                                        Los datos personales proporcionados se conservarán mientras no se solicite su supresión por la persona interesada, o quien legalmente actúe como su representante legal y ésta proceda, y mientras sean necesarios
-                                        -incluyendo la necesidad de conservarlos durante los plazos de prescripción aplicables- o pertinentes para la finalidad para la cual hubieran sido recabados o registrados. La conservación de los datos estará
-                                        condicionada a la obligación legal que Solvia tenga de conservarlos. Superados esos plazos los datos serán destruidos o borrados, realizándose la supresión, eliminación o destrucción de modo que la
-                                        información contenida en los soportes no sea recuperable.
-                                    </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">Legitimación</h2>
-                                    <p class="body-base-relaxed">
-                                        La base legal del tratamiento de sus datos es el consentimiento prestado por la persona interesada. Es también causa legítima de los tratamientos de datos por ser estos necesarios para la ejecución de un contrato de
-                                        compraventa o prestación de servicios, en los que las personas interesadas son parte o para la aplicación a petición de estas de medidas precontractuales (art. 6.1.a y b RGPD). Dicho consentimiento puede ser revocado
-                                        en cualquier momento. Es causa de legitimación el cumplimiento de una obligación legal para el responsable, El interés legítimo constituye también una causa legitima de tratamiento en la realización de ofertas
-                                        comerciales, a personas con las que previamente no se ha tenido relación.
-                                    </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">¿A qué destinatarios se comunicarán sus datos?<!-- --></h2>
-                                    <p class="body-base-relaxed">
-                                        Como consecuencia de la gestión de las finalidades autorizadas sus datos podrán ser comunicados entidades o personas directamente relacionadas con Solvia y con los servicios prestados por la misma. Así
-                                        mismo le informamos de que sus datos personales pueden ser cedidos a las empresas que componen la red de Franquicias y Agentes de Solvia con los mismos fines. Cada oficina es jurídica y financieramente
-                                        independiente. Estas personas o entidades estarán vinculadas a la prestación de un servicio por un contrato con la entidad, sin que puedan destinar los datos a otros fines. Sus datos no se cederán a ninguna entidad
-                                        sin su consentimiento salvo las cesiones previstas legalmente, en este sentido se solicitará su consentimiento expreso para la cesión de sus datos a cualquier otra entidad. No están previstas transferencias
-                                        internacionales de datos fuera del espacio de la Unión europea o a entidades que no cumplan los estándares en cuanto a protección de datos establecidos por el reglamento UE 679/2016.
-                                    </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">¿Cuál es la procedencia de sus datos?<!-- --></h2>
-                                    <p class="body-base-relaxed">
-                                        Los datos personales que trata Solvia son proporcionados por la persona interesada, o por representante legal en el caso de aquellas personas que tengan modificada su capacidad de obrar.
-                                    </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">¿Qué categorías de datos trata Solvia?<!-- --></h2>
-                                    <p class="body-base-relaxed">
-                                        Solvia. tratará los datos que nos suministre, que pueden ser de las siguientes categorías: 1. Datos de carácter identificativo y de contacto; 2. Imagen; 3. Datos económicos, financieros y de seguros;
-                                        4. Información comercial; 5. Datos de geolocalización.<!-- -->
-                                    </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">¿Cuáles son sus derechos?</h2>
-                                    <p class="body-base-relaxed">
-                                        Cualquier persona tiene derecho a obtener confirmación sobre si Solvia trata datos personales que le conciernen, o no. Las personas interesadas tienen derecho a acceder a sus datos personales y a
-                                        obtener una copia de los datos personales objeto del tratamiento, a actualizarlos, así como a solicitar la rectificación de los datos inexactos o, en su caso, solicitar su supresión cuando, entre otros motivos, los
-                                        datos ya no sean necesarios para los fines para los que fueron recogidos. En determinadas circunstancias y por motivos relacionados con su situación particular, los interesados podrán oponerse al tratamiento de sus
-                                        datos. Solvia dejará de tratar los datos, salvo por motivos legítimos imperiosos, o el ejercicio o la defensa de posibles reclamaciones También en determinadas circunstancias, previstas en el artículo
-                                        18 RGPD, los interesados podrán solicitar la limitación del tratamiento de sus datos, en cuyo caso Solvia los tratará, con excepción de su conservación, con el consentimiento del interesado o para la
-                                        formulación, el ejercicio o la defensa de reclamaciones, o con miras a la protección de los derechos de otra persona física o jurídica o por razones de interés público importante de la Unión o de un determinado
-                                        Estado miembro. En el caso de que fuera aplicable, como consecuencia de la aplicación del derecho a la supresión u oposición al tratamiento de datos personales en el entorno on-line los interesados tienen el derecho
-                                        al olvido según la jurisprudencia que el Tribunal de Justicia de la UE. En virtud del derecho a la portabilidad, los interesados tienen derecho a obtener los datos personales que les incumben en un formato
-                                        estructurado de uso común y lectura mecánica y a transmitirlos a otro responsable. Toda persona interesada tiene derecho a no ser objeto de una decisión basada únicamente en el tratamiento automatizado, incluida la
-                                        elaboración de perfiles, que produzca efectos jurídicos en él o le afecte significativamente de modo similar, salvo las excepciones previstas en el art.22.1 RGPD La persona interesada tiene el derecho a la supresión
-                                        de sus datos, por la desaparición de la finalidad que motivó el tratamiento o la recogida, por revocación del consentimiento cuando sea éste el que legitime el tratamiento, o por el resto de los motivos contenidos en
-                                        el artículo 17 RGPD. La supresión se realizará, procediendo al borrado de alto nivel de los datos contenidos en soportes automatizados y a la destrucción física de los soportes no automatizados.
-                                    </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">¿Cómo se pueden ejercer los derechos?<!-- --></h2>
-                                    <p class="body-base-relaxed">
-                                        -Mediante un escrito acompañado siempre de copia del DNI u otro documento que acredite la identidad de la persona interesada dirigido a las direcciones indicadas en el encabezamiento dirigidas al delegado de
-                                        protección de datos de la entidad.
-                                    </p>
-                                    <h2 class="tagline-3 mt-12 mb-6">¿Qué vías de reclamación existen?<!-- --></h2>
-                                    <p class="body-base-relaxed">
-                                        Si considera que sus derechos no se han atendido debidamente, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos, cuyos datos de contacto son: Teléfonos: 901 100 099
-                                        91.266.35.17 Dirección Postal: C/ Jorge Juan,6 Madrid.
-                                    </p>
-                                    <br />
-                                    ®
-                                    <!-- -->2025<!-- -->
-                                    Solvia Real Estate LLC. Todos los derechos reservados. Solvia®, el logotipo de Solvia® y C21® son marcas de servicio registradas y propiedad de Solvia Real Estate LLC y se utilizan bajo licencia. Cada
-                                    oficina es propiedad y se administra de manera autónoma y es legal y financieramente independiente. Cualquier servicio o producto proporcionado por las oficinas independientes es de su exclusiva responsabilidad y no
-                                    puede estar relacionado con Solvia Real Estate LLC o cualquiera de sus empresas afiliadas, como Solvia España. La información proporcionada por los organismos independientes es de su entera responsabilidad. Los
-                                    asesores inmobiliarios de Solvia son colaboradores externos.
+                                    <h1 class="h2 mb-4 max-w-[424px]">Póngase en contacto con nuestro equipo</h1>
+                                    <div class="w-full">
+                                        <div><div class="my-4"></div></div>
+                                        <div class="w-full h-full pt-1">
+                                            <form class="space-y-8 h-full flex flex-col justify-between">
+                                                <div class="flex-grow">
+                                                    <div class="gap-5 grid grid-cols-1" data-orientation="vertical">
+                                                        <div class="flex flex-col col-span-1">
+                                                            <div class="space-y-2 flex w-full flex-col justify-start">
+                                                                <div class="relative -mt-2">
+                                                                    <label class="h6 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":R5n9ut9smkq:-form-item">
+                                                                        <span class="font-medium">Nombre</span><span class="text-destructive"> *</span>
+                                                                    </label>
+                                                                </div>
+                                                                <input
+                                                                    type="text"
+                                                                    class="rounded-0 flex h-9 w-full border border-grey-200 bg-transparent px-3 py-1 body-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-black/50 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                                                                    required=""
+                                                                    placeholder="Nombre"
+                                                                    id=":R5n9ut9smkq:-form-item"
+                                                                    aria-describedby=":R5n9ut9smkq:-form-item-description"
+                                                                    aria-invalid="false"
+                                                                    name="name"
+                                                                    value=""
+                                                                    fdprocessedid="16vnoi"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex flex-col col-span-1">
+                                                            <div class="space-y-2 flex w-full flex-col justify-start">
+                                                                <div class="relative -mt-2">
+                                                                    <label class="h6 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":R9n9ut9smkq:-form-item">
+                                                                        <span class="font-medium">Email</span><span class="text-destructive"> *</span>
+                                                                    </label>
+                                                                </div>
+                                                                <input
+                                                                    type="text"
+                                                                    class="rounded-0 flex h-9 w-full border border-grey-200 bg-transparent px-3 py-1 body-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-black/50 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                                                                    required=""
+                                                                    placeholder="Email"
+                                                                    id=":R9n9ut9smkq:-form-item"
+                                                                    aria-describedby=":R9n9ut9smkq:-form-item-description"
+                                                                    aria-invalid="false"
+                                                                    name="email"
+                                                                    value=""
+                                                                    fdprocessedid="wxcmnq"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex flex-col col-span-1">
+                                                            <div class="space-y-2 flex flex-col">
+                                                                <div class="relative -mt-2">
+                                                                    <label class="h6 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":Rdn9ut9smkq:-form-item"><span class="font-medium">Teléfono</span></label>
+                                                                </div>                                                                
+                                                                <input class="rounded-0 flex h-9 w-full border border-grey-200 bg-transparent ps-10 pe-3 py-1 body-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-black/50 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50" id="phone" type="tel" name="phone" placeholder="Teléfono" required=""/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex flex-col col-span-1">
+                                                            <div class="space-y-2 flex flex-col">
+                                                                <div class="relative -mt-2">
+                                                                    <label class="h6 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":Rhn9ut9smkq:-form-item"><span class="font-medium">Mensaje</span></label>
+                                                                </div>
+                                                                <textarea
+                                                                    class="rounded-0 flex min-h-[108px] w-full border border-grey-200 bg-transparent px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                                                                    name="message"
+                                                                    placeholder="Mensaje"
+                                                                    fieldtype="textarea"
+                                                                    id=":Rhn9ut9smkq:-form-item"
+                                                                    aria-describedby=":Rhn9ut9smkq:-form-item-description"
+                                                                    aria-invalid="false"
+                                                                ></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="flex flex-col gap-4 mt-4">
+                                                        <div class="flex flex-col gap-3">
+                                                            <span class="body-xs text-grey-400 text-left">
+                                                                Al enviar, acepta el<!-- -->
+                                                                <a target="_blank" class="link text-blue-200" href="/terminos-y-condiciones">
+                                                                    Aviso Legal<!-- -->
+                                                                    &amp;
+                                                                    <!-- -->Política de Privacidad
+                                                                </a>
+                                                                .
+                                                            </span>
+                                                            <div class="flex items-center space-x-2">
+                                                                <button
+                                                                    type="button"
+                                                                    role="checkbox"
+                                                                    aria-checked="false"
+                                                                    data-state="unchecked"
+                                                                    value="on"
+                                                                    class="peer h-[18px] w-[18px] shrink-0 border border-grey-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-gold-600 data-[state=checked]:text-white data-[state=checked]:border-gold-600"
+                                                                    id="brand-terms"
+                                                                    fdprocessedid="3no6hr"
+                                                                ></button>
+                                                                <input
+                                                                    type="checkbox"
+                                                                    aria-hidden="true"
+                                                                    style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 17.9844px; height: 17.9844px;"
+                                                                    tabindex="-1"
+                                                                    value="on"
+                                                                />
+                                                                <label for="brand-terms" class="body-xs text-grey-400 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                                                                    Consiento que mis datos sean tratados por la marca<!-- -->...<!-- -->
+                                                                    <button type="button" class="link text-blue-200 hover:underline" fdprocessedid="wt2orl">Leer más</button>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <button
+                                                            class="inline-flex items-center justify-center gap-2 tracking-[0.01em] transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:text-opacity-40 disabled:cursor-not-allowed h-[35px] px-[10px] pt-[6px] pb-[7px] button-sm w-full bg-black text-white hover:bg-black/90"
+                                                            type="submit"
+                                                            disabled=""
+                                                        >
+                                                            Ponte en contacto
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 @include('components.footer')
             </div>
         </main>
         <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
-        <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
-        <div
-            data-radix-popper-content-wrapper=""
-            dir="ltr"
-            style="
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            transform: translate(1436px, 47px);
-            min-width: max-content;
-            --radix-popper-transform-origin: 50% 0px;
-            z-index: 50;
-            --radix-popper-available-width: 1903px;
-            --radix-popper-available-height: 898px;
-            --radix-popper-anchor-width: 149.71875px;
-            --radix-popper-anchor-height: 20px;
-            "
-         >
-            <div
-               data-side="bottom"
-               data-align="center"
-               role="menu"
-               aria-orientation="vertical"
-               data-state="open"
-               data-radix-menu-content=""
-               dir="ltr"
-               id="radix-:R1bopsmkqH1:"
-               aria-labelledby="radix-:R1bopsmkq:"
-               class="z-50 min-w-[8rem] overflow-hidden border bg-background p-1 text-popover-foreground shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 mt-2"
-               tabindex="-1"
-               data-orientation="vertical"
-               style="
-                     outline: none;
-                     --radix-dropdown-menu-content-transform-origin: var(--radix-popper-transform-origin);
-                     --radix-dropdown-menu-content-available-width: var(--radix-popper-available-width);
-                     --radix-dropdown-menu-content-available-height: var(--radix-popper-available-height);
-                     --radix-dropdown-menu-trigger-width: var(--radix-popper-anchor-width);
-                     --radix-dropdown-menu-trigger-height: var(--radix-popper-anchor-height);
-               "
-            >
-            <a
-                  class="relative flex select-none items-center px-2 py-1.5 body-xs outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50 cursor-pointer button-md font-bold hover:text-gold-600 transition-colors"
-                  role="menuitem"
-                  tabindex="-1"
-                  data-orientation="vertical"
-                  data-radix-collection-item=""
-                  href="/agencias"
-            >
-                  Agencias
-            </a>
-            <a
-                  class="relative flex select-none items-center px-2 py-1.5 body-xs outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50 cursor-pointer button-md font-bold hover:text-gold-600 transition-colors"
-                  role="menuitem"
-                  tabindex="-1"
-                  data-orientation="vertical"
-                  data-radix-collection-item=""
-                  href="/asesores"
-            >
-                  Asesores
-            </a>
-            <a
-                  class="relative flex select-none items-center px-2 py-1.5 body-xs outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50 cursor-pointer button-md font-bold hover:text-gold-600 transition-colors"
-                  role="menuitem"
-                  tabindex="-1"
-                  data-orientation="vertical"
-                  data-radix-collection-item=""
-                  href="/unete-a-nosotros"
-            >
-                  Únete a SOLVIA
-            </a>
-         </div>
-      </div>
-      <script>
-         const button = document.getElementById("radix-:R1bopsmkq:");
-         const menu = document.getElementById("radix-:R1bopsmkqH1:");
-         menu.setAttribute("data-state", "closed");
-         menu.style.display = "none";
-         document.addEventListener("DOMContentLoaded", function () {
-       
-             button.addEventListener("click", function () {
-                 const isOpen = menu.getAttribute("data-state") === "open";
-                 menu.setAttribute("data-state", isOpen ? "closed" : "open");
-                 menu.style.display = isOpen ? "none" : "block";
-             });
-       
-             // Close menu when clicking outside
-             document.addEventListener("click", function (event) {
-                 if (!button.contains(event.target) && !menu.contains(event.target)) {
-                     menu.setAttribute("data-state", "closed");
-                     menu.style.display = "none";
-                 }
-             });
-         });
-       </script>
-       
+        
+        <script>
+            const input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+                initialCountry: "auto",
+                geoIpLookup: callback => {
+                fetch('https://ipapi.co/json')
+                    .then(res => res.json())
+                    .then(data => callback(data.country_code))
+                    .catch(() => callback('us'));
+                },
+                utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.10/build/js/utils.js", // for formatting etc.
+            });
+        </script>
     </body>
 </html>

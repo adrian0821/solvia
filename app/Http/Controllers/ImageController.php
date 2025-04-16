@@ -157,4 +157,8 @@ class ImageController extends Controller
     public function termsAndConditions(Request $request){
         return view('terms-conditions');
     }
+    
+    public function contact(Request $request){
+        return view('contact');
+    }
 }

@@ -9,7 +9,7 @@
                             <img src="{{Url('assets/logo.png')}}" style="width: 250px;"/>             
                         </a>
                         <nav class="items-center gap-6 hidden lg:flex">
-                            <a class="button-md font-bold text-black" href="/comprar">Comprar</a>
+                            <a class="button-md font-bold text-black" href="/contact">Comprar</a>
                             <a class="button-md font-bold text-black" href="/alquilar">Alquilar</a>
                             <div class="flex items-center ml-[24px]">
                                 <div class="h-[18px] mx-4 w-px bg-grey-400"></div>
