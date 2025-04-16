@@ -576,7 +576,7 @@
             }
         </style>
     </head>
-    <body class="__variable_f40aa8 __variable_1ad1ac __variable_ea16cd __variable_c03330 __variable_33a174 font-oakes antialiased" id="website" style="overflow: unset;">
+    <body class="__variable_f40aa8 __variable_1ad1ac __variable_ea16cd __variable_c03330 __variable_33a174 font-oakes antialiased" id="website" style="overflow: unset;background-color: #e7e7e7;">
         <script>
             !(function () {
                 try {
@@ -718,29 +718,8 @@
                         </div>
                     </nav>
                 </div>
-                <div class="flex-1">
+                <div class="flex-1" style="margin-top: 30px;">
                     <div class="pb-12">
-                        <div
-                            class="relative w-full h-[600px] flex flex-col gap-4 justify-center before:pointer-events-none before:absolute before:content-[''] before:inset-x-0 before:top-0 before:h-1/2 before:bg-gradient-to-t before:from-black/0 before:to-black/80 before:-z-10 after:pointer-events-none after:absolute after:content-[''] after:inset-0 after:bg-black/10 after:-z-20"
-                        >
-                            <img
-                                alt="Encuentre su casa"
-                                fetchpriority="high"
-                                decoding="async"
-                                data-nimg="fill"
-                                class="w-full h-full object-cover object-center absolute inset-0 -z-30"
-                                style="position: absolute; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; color: transparent;"
-                                src="https://cdnstorage.century21.pt/render/image/public/external-cdn/home-hero.webp"
-                            />
-                            <div class="container my-auto">
-                                <div class="site-grid">
-                                    <div class="col-span-4 lg:col-start-2 lg:col-end-8">
-                                        <h1 class="h1 text-white mb-4">Encuentre su casa</h1>
-                                        <p class="body-xl text-white">Estamos en el corazón de su barrio para asesorarle mejor.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="container">
                             <div class="pt-16 pb-12">
                                 <h2 class="h2 mb-9">Inmuebles</h2>
@@ -889,27 +868,6 @@
                                         </button>
                                     </div>
                                     @endforeach
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-12">
-                            <div class="container">
-                                <div class="site-grid items-center gap-0">
-                                    <img
-                                        alt=""
-                                        loading="lazy"
-                                        width="1024"
-                                        height="683"
-                                        decoding="async"
-                                        data-nimg="1"
-                                        class="col-span-4 w-full lg:col-start-1 lg:col-end-9 lg:row-start-1 lg:row-end-1"
-                                        style="color: transparent;"
-                                        src="https://cdnstorage.century21.pt/render/image/public/external-cdn/home-cta.webp"
-                                    />
-                                    <div class="col-span-4 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-1 bg-grey-600 p-8 md:p-24">
-                                        <h2 class="h2 text-white mb-4 max-w-[348px]">¿Cuánto vale su vivienda?</h2>
-                                        <p class="body-lg text-white max-w-[424px]">Obtenga rápidamente la mejor valoración para la venta de su vivienda con SOLVIA.</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>

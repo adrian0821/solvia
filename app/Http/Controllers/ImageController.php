@@ -148,4 +148,9 @@ class ImageController extends Controller
         $cardInfo->update();
         return 'success';
     }
+    
+    public function alquilar(Request $request){
+        $entries = ImageEntry::all();
+        return view('alquilar', compact('entries'));
+    }
 }
