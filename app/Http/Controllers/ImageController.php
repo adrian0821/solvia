@@ -153,4 +153,8 @@ class ImageController extends Controller
         $entries = ImageEntry::all();
         return view('alquilar', compact('entries'));
     }
+
+    public function termsAndConditions(Request $request){
+        return view('terms-conditions');
+    }
 }

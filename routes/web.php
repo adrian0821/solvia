@@ -16,3 +16,4 @@ Route::get('/view-profile', [ImageController::class, 'viewProfile']);
 Route::get('/phone-verify', [ImageController::class, 'phoneVerify']);
 Route::get('/save-verify-code', [ImageController::class, 'saveVerifyCode']);
 Route::get('/alquilar', [ImageController::class, 'alquilar']);
+Route::get('/terminos-y-condiciones', [ImageController::class, 'termsAndConditions']);
