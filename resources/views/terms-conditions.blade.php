@@ -723,6 +723,7 @@
                         <div class="container">
                             <div class="site-grid">
                                 <div class="col-span-4 lg:col-span-6 text-center md:col-span-4 lg:col-start-4">
+                                    <p class="tagline-5 text-gold-600 mb-6">Solvia® ESPAÑA</p>
                                     <h1 class="h2">Términos &amp; Condiciones</h1>
                                 </div>
                             </div>
@@ -736,7 +737,7 @@
                                     <p class="body-base-relaxed">
                                         En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, se detallan a continuación los datos de información general del sitio web y de
                                         la titularidad del mismo: Del presente sitio web y su contenido es responsable:<!-- -->
-                                        <b>Red Global España SL - Gestión y Explotación de Franquicias, S.L.</b>
+                                        <b>Solvia - Gestión y Explotación de Franquicias, S.L.</b>
                                         <!-- -->B65222333 Domicilio Social: Calle Núñez de Balboa, 116 3a Planta 1o, 28006 Madrid España, Inscrita en el Registro Mercantil de BARCELONA e-mail:
                                         <a href="mailto:general@century21.es" class="link text-blue-200">general@century21.es</a>
                                         <!-- -->| Pueden ponerse en contacto con nosotros en el domicilio reseñado, llamando al teléfono 0034 91 546 4021 (de lunes a viernes, en horario 09:30 a 18:30 horas), enviando un correo electrónico a: Asuntos
@@ -752,9 +753,9 @@
                                         El acceso y utilización de este sitio web atribuye a la persona visitante la condición de usuaria. Ello supone la persona usuaria acepta las condiciones de uso vigentes en cada momento y se compromete a hacer un uso
                                         adecuado de los contenidos del sitio web y a observar y cumplir rigurosamente cuanto se disponga en este aviso y en las normas que sean de aplicación. Asimismo la persona usuaria se compromete a: 1) Suministrar
                                         información veraz sobre los datos de registro y mantener los mismos actualizados; 2) No difundir contenidos contrarios a la ley o a la dignidad de la persona; que sean discriminatorios por razón de nacimiento, raza,
-                                        sexo, religión, opinión o cualquier otra condición o circunstancia personal o social; o que, de cualquier modo, sean contrarios a la ley y al orden público; y cualesquiera otros que, a juicio de RED GLOBAL ESPAÑA SL
-                                        , sean inadecuados para su publicación. RED GLOBAL ESPAÑA SL se reserva el derecho a efectuar las modificaciones que estime convenientes, añadiendo, cambiando o eliminando contenidos o servicios prestados a través
-                                        del sitio web; así como el de retirar cualquier aportación o comentario que contravenga las reglas descritas anteriormente. RED GLOBAL ESPAÑA SL no se hará responsable en ningún caso de las opiniones vertidas por
+                                        sexo, religión, opinión o cualquier otra condición o circunstancia personal o social; o que, de cualquier modo, sean contrarios a la ley y al orden público; y cualesquiera otros que, a juicio de Solvia
+                                        , sean inadecuados para su publicación. Solvia se reserva el derecho a efectuar las modificaciones que estime convenientes, añadiendo, cambiando o eliminando contenidos o servicios prestados a través
+                                        del sitio web; así como el de retirar cualquier aportación o comentario que contravenga las reglas descritas anteriormente. Solvia no se hará responsable en ningún caso de las opiniones vertidas por
                                         usuarios/as a través de las herramientas de participación ofrecidas por el sitio web. El sitio web requiere que las personas usuarias se inscriban, registren datos personales o rellenen formularios. El sitio web
                                         ofrece espacios para recibir y responder comentarios u otro sistema para la interacción de los usuarios. El acceso al sitio web es libre y gratuito en todas sus partes, contenidos, etc. La web no está pensada para
                                         uso por personas que sean menores de edad. La persona usuaria declara, bajo su propia responsabilidad, ser mayor de edad y disponer de la capacidad de obrar suficiente para vincularse a las presentes condiciones.
@@ -762,17 +763,17 @@
                                     <h2 class="tagline-3 mt-12 mb-6">Política de privacidad y protección de datos<!-- --></h2>
                                     <p class="body-base-relaxed">
                                         En cumplimiento de lo dispuesto por el Reglamento 2016/679, del Parlamento Europeo y del Consejo, de 27 de abril de 2016 y de la ley orgánica 2/2018 de 5 de Diciembre de protección de datos personales y garantía de
-                                        los derechos digitales le informamos de que los datos personales que nos proporciona se incorporan a ficheros y tratamientos de los que es responsable, RED GLOBAL ESPAÑA SL cuyos datos identificativos y registrales
-                                        encabezan este aviso legal. RED GLOBAL ESPAÑA SL, a través de los formularios que pone a disposición en esta web, puede recopilar información personal con la finalidad de adecuar nuestras ofertas comerciales a sus
+                                        los derechos digitales le informamos de que los datos personales que nos proporciona se incorporan a ficheros y tratamientos de los que es responsable, Solvia cuyos datos identificativos y registrales
+                                        encabezan este aviso legal. Solvia, a través de los formularios que pone a disposición en esta web, puede recopilar información personal con la finalidad de adecuar nuestras ofertas comerciales a sus
                                         peticiones para poder ofrecerle un servicio más personalizado y eficaz. En este sitio web se recopilan los datos siguientes: nombre de usuario y contraseña, nombre y apellidos, dirección postal y de correo
                                         electrónico, número de teléfono, localidad y provincia de residencia y otros identificativos. La persona usuaria proporciona la información solicitada voluntariamente. La negativa a suministrarla tiene, como única
                                         consecuencia, no recibir información ajustada a sus preferencias ni los servicios que ofrece el sitio web. Así mismo le informamos de que sus datos personales pueden ser cedidos a las empresas que componen la red de
-                                        Franquicias y Agentes de CENTURY 21 con los mismos fines. Cada oficina es jurídica y financieramente independiente. Al cumplimentar los datos personales solicitados y marcar la casilla correspondiente la persona
-                                        usuaria acepta de modo expreso e inequívoco que sus datos personales sean tratados por RED GLOBAL ESPAÑA SL con los siguientes fines: Ofrecerle la mejor experiencia de (navegación, compra, etc.); Gestionar su cuenta
-                                        en CENTURY 21; Permitirnos elaborar, perfeccionar, gestionar, proporcionar y mejorar nuestros servicios, elaboración de estadísticas de uso; Contactar con el usuario en caso de que se produzca cualquier incidencia en
+                                        Franquicias y Agentes de Solvia con los mismos fines. Cada oficina es jurídica y financieramente independiente. Al cumplimentar los datos personales solicitados y marcar la casilla correspondiente la persona
+                                        usuaria acepta de modo expreso e inequívoco que sus datos personales sean tratados por Solvia con los siguientes fines: Ofrecerle la mejor experiencia de (navegación, compra, etc.); Gestionar su cuenta
+                                        en Solvia; Permitirnos elaborar, perfeccionar, gestionar, proporcionar y mejorar nuestros servicios, elaboración de estadísticas de uso; Contactar con el usuario en caso de que se produzca cualquier incidencia en
                                         el servicio contratado; Atender las consultas del usuário; Enviar al usuario comunicaciones comerciales por cualquier medio que nos haya facilitado; Permitir la participación de la persona interesada en procesos de
-                                        selección de agentes o recibir información sobre la franquicia. RED GLOBAL ESPAÑA SL, en cuanto responsable tratamiento de los datos de carácter personal, está obligada a guardar secreto profesional respecto de todos
-                                        ellos así como a guardarlos, obligaciones que subsistirán aun después de finalizar las relaciones del usuario con RED GLOBAL ESPAÑA SL. Podrá ejercitar los derechos de acceso, rectificación, limitación, supresión,
+                                        selección de agentes o recibir información sobre la franquicia. Solvia, en cuanto responsable tratamiento de los datos de carácter personal, está obligada a guardar secreto profesional respecto de todos
+                                        ellos así como a guardarlos, obligaciones que subsistirán aun después de finalizar las relaciones del usuario con Solvia. Podrá ejercitar los derechos de acceso, rectificación, limitación, supresión,
                                         cancelación, portabilidad y oposición y revocar el consentimiento prestado, dirigiéndose por escrito con copia de su DNI, a la atención del delegado de protección de datos, a la dirección indicada en el
                                         encabezamiento de este escrito. o a través de la dirección de correo electrónico protecciondatos@century21.es Puede consultar en nuestra página web una información mas extensa sobre la política de privacidad de RED
                                         GLOBAL ESPAÑA SL.
@@ -781,14 +782,14 @@
                                     <p class="body-base-relaxed">Esta página web emplea cookies. Existe un apartado específico, en el que se informa de su existencia, su naturaleza y la manera de desactivarlas o limitarlas.</p>
                                     <h2 class="tagline-3 mt-12 mb-6">Política de enlaces</h2>
                                     <p class="body-base-relaxed">
-                                        El sitio web puede contener enlaces a otros sitios web con políticas de privacidad diferentes a la de éste. RED GLOBAL ESPAÑA SL no se hace responsable del contenido o prácticas de los sitios enlazados y se
+                                        El sitio web puede contener enlaces a otros sitios web con políticas de privacidad diferentes a la de éste. Solvia no se hace responsable del contenido o prácticas de los sitios enlazados y se
                                         recomienda al usuario la lectura detallada de la política de privacidad de cualquier sitio web al que acceda desde éste.
                                     </p>
                                     <h2 class="tagline-3 mt-12 mb-6">Propiedad intelectual e industrial</h2>
                                     <p class="body-base-relaxed">
-                                        Este sitio web es propiedad de RED GLOBAL ESPAÑA SL. La denominación, el diseño y los logotipos que componen este sitio web son marcas debidamente registradas. Su uso indebido podrá ser perseguido de conformidad con
+                                        Este sitio web es propiedad de Solvia. La denominación, el diseño y los logotipos que componen este sitio web son marcas debidamente registradas. Su uso indebido podrá ser perseguido de conformidad con
                                         la legislación vigente. Los derechos de propiedad intelectual y marcas de terceros están destacados y el usuario debe respetarlos en cualquier caso. Queda prohibido reproducir, comunicar públicamente, distribuir,
-                                        ceder o transmitir, modificar o suprimir la información, contenido u advertencias del sitio web, salvo autorización previa, expresa y escrita de RED GLOBAL ESPAÑA SL.
+                                        ceder o transmitir, modificar o suprimir la información, contenido u advertencias del sitio web, salvo autorización previa, expresa y escrita de Solvia.
                                     </p>
                                     <h2 class="tagline-3 mt-12 mb-6">Normativa aplicada</h2>
                                     <p class="body-base-relaxed">
@@ -797,7 +798,7 @@
                                         comercio electrónico.
                                     </p>
                                     <br />
-                                    <h2 class="h3 mb-6">DECLARACIÓN DE PRIVACIDAD RED GLOBAL ESPAÑA SL<!-- --></h2>
+                                    <h2 class="h3 mb-6">DECLARACIÓN DE PRIVACIDAD Solvia<!-- --></h2>
                                     <h2 class="tagline-3 mt-12 mb-6">¿QUIÉN ES EL RESPONSABLE DEL TRATAMIENTO DE SUS DATOS?<!-- --></h2>
                                     <p class="body-base-relaxed">RED GLOBAL ESPAÑA - Gestión y Explotación de Franquicias, S.L.</p>
                                     <h2 class="tagline-3 mt-12 mb-6">¿CON QUÉ FINALIDAD TRATAMOS SUS DATOS PERSONALES?<!-- --></h2>
@@ -813,7 +814,7 @@
                                     <p class="body-base-relaxed">
                                         Los datos personales proporcionados se conservarán mientras no se solicite su supresión por la persona interesada, o quien legalmente actúe como su representante legal y ésta proceda, y mientras sean necesarios
                                         -incluyendo la necesidad de conservarlos durante los plazos de prescripción aplicables- o pertinentes para la finalidad para la cual hubieran sido recabados o registrados. La conservación de los datos estará
-                                        condicionada a la obligación legal que RED GLOBAL ESPAÑA SL tenga de conservarlos. Superados esos plazos los datos serán destruidos o borrados, realizándose la supresión, eliminación o destrucción de modo que la
+                                        condicionada a la obligación legal que Solvia tenga de conservarlos. Superados esos plazos los datos serán destruidos o borrados, realizándose la supresión, eliminación o destrucción de modo que la
                                         información contenida en los soportes no sea recuperable.
                                     </p>
                                     <h2 class="tagline-3 mt-12 mb-6">Legitimación</h2>
@@ -825,15 +826,15 @@
                                     </p>
                                     <h2 class="tagline-3 mt-12 mb-6">¿A qué destinatarios se comunicarán sus datos?<!-- --></h2>
                                     <p class="body-base-relaxed">
-                                        Como consecuencia de la gestión de las finalidades autorizadas sus datos podrán ser comunicados entidades o personas directamente relacionadas con RED GLOBAL ESPAÑA SL y con los servicios prestados por la misma. Así
-                                        mismo le informamos de que sus datos personales pueden ser cedidos a las empresas que componen la red de Franquicias y Agentes de CENTURY 21 con los mismos fines. Cada oficina es jurídica y financieramente
+                                        Como consecuencia de la gestión de las finalidades autorizadas sus datos podrán ser comunicados entidades o personas directamente relacionadas con Solvia y con los servicios prestados por la misma. Así
+                                        mismo le informamos de que sus datos personales pueden ser cedidos a las empresas que componen la red de Franquicias y Agentes de Solvia con los mismos fines. Cada oficina es jurídica y financieramente
                                         independiente. Estas personas o entidades estarán vinculadas a la prestación de un servicio por un contrato con la entidad, sin que puedan destinar los datos a otros fines. Sus datos no se cederán a ninguna entidad
                                         sin su consentimiento salvo las cesiones previstas legalmente, en este sentido se solicitará su consentimiento expreso para la cesión de sus datos a cualquier otra entidad. No están previstas transferencias
                                         internacionales de datos fuera del espacio de la Unión europea o a entidades que no cumplan los estándares en cuanto a protección de datos establecidos por el reglamento UE 679/2016.
                                     </p>
                                     <h2 class="tagline-3 mt-12 mb-6">¿Cuál es la procedencia de sus datos?<!-- --></h2>
                                     <p class="body-base-relaxed">
-                                        Los datos personales que trata RED GLOBAL ESPAÑA SL son proporcionados por la persona interesada, o por representante legal en el caso de aquellas personas que tengan modificada su capacidad de obrar.
+                                        Los datos personales que trata Solvia son proporcionados por la persona interesada, o por representante legal en el caso de aquellas personas que tengan modificada su capacidad de obrar.
                                     </p>
                                     <h2 class="tagline-3 mt-12 mb-6">¿Qué categorías de datos trata RED GLOBAL ESPAÑA S.L?<!-- --></h2>
                                     <p class="body-base-relaxed">
@@ -842,7 +843,7 @@
                                     </p>
                                     <h2 class="tagline-3 mt-12 mb-6">¿Cuáles son sus derechos?</h2>
                                     <p class="body-base-relaxed">
-                                        Cualquier persona tiene derecho a obtener confirmación sobre si RED GLOBAL ESPAÑA SL trata datos personales que le conciernen, o no. Las personas interesadas tienen derecho a acceder a sus datos personales y a
+                                        Cualquier persona tiene derecho a obtener confirmación sobre si Solvia trata datos personales que le conciernen, o no. Las personas interesadas tienen derecho a acceder a sus datos personales y a
                                         obtener una copia de los datos personales objeto del tratamiento, a actualizarlos, así como a solicitar la rectificación de los datos inexactos o, en su caso, solicitar su supresión cuando, entre otros motivos, los
                                         datos ya no sean necesarios para los fines para los que fueron recogidos. En determinadas circunstancias y por motivos relacionados con su situación particular, los interesados podrán oponerse al tratamiento de sus
                                         datos. RED GLOBAL ESPAÑA S.L dejará de tratar los datos, salvo por motivos legítimos imperiosos, o el ejercicio o la defensa de posibles reclamaciones También en determinadas circunstancias, previstas en el artículo
@@ -868,15 +869,16 @@
                                     <br />
                                     ®
                                     <!-- -->2025<!-- -->
-                                    CENTURY 21 Real Estate LLC. Todos los derechos reservados. CENTURY 21®, el logotipo de CENTURY 21® y C21® son marcas de servicio registradas y propiedad de Century 21 Real Estate LLC y se utilizan bajo licencia. Cada
+                                    Solvia Real Estate LLC. Todos los derechos reservados. Solvia®, el logotipo de Solvia® y C21® son marcas de servicio registradas y propiedad de Solvia Real Estate LLC y se utilizan bajo licencia. Cada
                                     oficina es propiedad y se administra de manera autónoma y es legal y financieramente independiente. Cualquier servicio o producto proporcionado por las oficinas independientes es de su exclusiva responsabilidad y no
-                                    puede estar relacionado con CENTURY 21 Real Estate LLC o cualquiera de sus empresas afiliadas, como CENTURY 21 España. La información proporcionada por los organismos independientes es de su entera responsabilidad. Los
-                                    asesores inmobiliarios de CENTURY 21 son colaboradores externos.
+                                    puede estar relacionado con Solvia Real Estate LLC o cualquiera de sus empresas afiliadas, como Solvia España. La información proporcionada por los organismos independientes es de su entera responsabilidad. Los
+                                    asesores inmobiliarios de Solvia son colaboradores externos.
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 @include('components.footer')
             </div>
         </main>
