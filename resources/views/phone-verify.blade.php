@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Phone Verification</title>
+  <title>SOLVIA ® España | Encuentre su casa</title>
   <link rel="icon" href="{{ Url('assets/favicon.svg') }}" />
   <link rel="stylesheet" href="{{ Url('assets/style.css') }}" data-precedence="next" />
   <style>
