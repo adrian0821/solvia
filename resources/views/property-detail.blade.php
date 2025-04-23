@@ -897,9 +897,10 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                                                                     @for ($i = 5; $i <= 9; $i++) {{-- Start from day 5 and go to day 9 --}}
                                                                         @php
                                                                             $date = \Carbon\Carbon::today()->addDays($i);
+                                                                            $isSunday = $date->dayOfWeek === 0;
                                                                         @endphp
                                                                         <button class="h-[120px] flex flex-col justify-center items-center border border-gray-300 hover:border-black transition-colors bg-white date-button" 
-                                                                                data-date="{{ $date->format('l, F d') }}">
+                                                                                data-date="{{ $date->format('l, F d') }}" @if($isSunday) disabled @endif>
                                                                             <div class="text-xs font-medium text-[#746649]">{{ $date->translatedFormat('l') }}</div>
                                                                             <div class="text-2xl font-medium text-[#252526]">{{ $date->format('d') }}</div>
                                                                             <div class="text-sm font-medium text-[#252526]">{{ $date->translatedFormat('F') }}</div>
@@ -1376,7 +1377,10 @@ Si quieres verlo en persona, ¡contáctanos y agenda tu visita!
                     date.setHours(0, 0, 0, 0);
                     allowedStart.setHours(0, 0, 0, 0);
 
-                    const isAllowed = date >= allowedStart;
+                    const isAfterAllowedStart = date >= allowedStart;
+                    const isNotSunday = date.getDay() !== 0; // 0 = Sunday
+
+                    const isAllowed = isAfterAllowedStart && isNotSunday;
                     return [isAllowed];
                 },
                 onSelect: function(dateText) {                    
