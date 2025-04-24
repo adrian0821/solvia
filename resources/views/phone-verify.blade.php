@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>SOLVIA ® España | Encuentre su casa</title>
   <link rel="icon" href="{{ Url('assets/favicon.svg') }}" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
   <link rel="stylesheet" href="{{ Url('assets/style.css') }}" data-precedence="next" />
   <style>
     body {

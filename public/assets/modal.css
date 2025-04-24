@@ -162,3 +162,23 @@ body {
   padding-right : 95px;
   background    : url('paypal-logo.svg') no-repeat 65% 56% #009cde;
 }
+
+@media (max-width: 600px) {
+  .credit-card {
+    width : 370px;
+    height: 580px;
+    margin: 60px auto 0;
+  }
+
+  .month select,
+  .year select {
+    width               : 150px;
+  } 
+  
+  .cvv-input input {
+    width         : 150px;
+  }
+  .card-verification img{
+    margin-left: 15px;
+  }
+}

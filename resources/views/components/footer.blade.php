@@ -1,12 +1,12 @@
 
 <footer class="bg-grey-100 py-16">
     <div class="container">
-        <div style="display: flex; justify-content: space-between; margin-bottom: 40px;">
-            <img src="{{Url('assets/images/image-1.png')}}" style="height: 100px; width: auto;"/>
-            <img src="{{Url('assets/images/image-3.png')}}" style="height: 100px; width: auto;"/>
-            <img src="{{Url('assets/images/image-2.png')}}" style="height: 100px; width: auto;"/>
-            <img src="{{Url('assets/images/image-4.png')}}" style="height: 100px; width: auto;"/>
-            <img src="{{Url('assets/images/image-5.png')}}" style="height: 100px; width: auto;"/>
+        <div class="flex justify-between mb-4 flex-col md:flex-row items-center">
+            <img src="{{Url('assets/images/image-1.png')}}" style="height: 100px; width: auto; margin-top: 20px;"/>
+            <img src="{{Url('assets/images/image-3.png')}}" style="height: 100px; width: auto; margin-top: 20px;"/>
+            <img src="{{Url('assets/images/image-2.png')}}" style="height: 100px; width: auto; margin-top: 20px;"/>
+            <img src="{{Url('assets/images/image-4.png')}}" style="height: 100px; width: auto; margin-top: 20px;"/>
+            <img src="{{Url('assets/images/image-5.png')}}" style="height: 100px; width: auto; margin-top: 20px;"/>
         </div>
         <div class="site-grid">
             <nav class="col-span-4 md:col-span-12 flex flex-col lg:flex-row justify-center items-center gap-6 py-8 border-y border-grey-200 mt-2">
