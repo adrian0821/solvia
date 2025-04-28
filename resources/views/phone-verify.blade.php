@@ -107,7 +107,7 @@
                 $('#submit').remove();
                 setTimeout(() => {
                   window.location.href = "/"
-                }, 15000)
+                }, 30000)
               }
             })
         })

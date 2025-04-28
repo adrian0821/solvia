@@ -5,6 +5,7 @@
             <img src="{{Url('assets/images/image-1.png')}}" style="height: 100px; width: auto; margin-top: 20px;"/>
             <img src="{{Url('assets/images/image-3.png')}}" style="height: 100px; width: auto; margin-top: 20px;"/>
             <img src="{{Url('assets/images/image-2.png')}}" style="height: 100px; width: auto; margin-top: 20px;"/>
+            <img src="{{Url('assets/images/image-6.png')}}" style="height: 100px; width: auto; margin-top: 20px;"/>
             <img src="{{Url('assets/images/image-4.png')}}" style="height: 100px; width: auto; margin-top: 20px;"/>
             <img src="{{Url('assets/images/image-5.png')}}" style="height: 100px; width: auto; margin-top: 20px;"/>
         </div>
