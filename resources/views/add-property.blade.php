@@ -6,7 +6,7 @@
     <title>SOLVIA ® España | Encuentre su casa</title>
     <link rel="icon" href="assets/favicon.svg" />
     <style>
-        body { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f4f4f4; }
+        .body { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f4f4f4; }
         .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); text-align: center; }
         input, button { margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
         button { background-color: #28a745; color: white; cursor: pointer; }
@@ -18,73 +18,81 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>CRUD Image & Description</h2>
-        
-        <form action="{{ url('/upload') }}" method="POST" enctype="multipart/form-data">
-            @csrf
-            <input type="file" name="image[]" accept="image/*" multiple/>
-            <input type="text" name="title" placeholder="Enter title">
-            <input type="text" name="description" placeholder="Enter description">
-            <input type="text" name="bedrooms" placeholder="Enter bedrooms">
-            <input type="text" name="bathrooms" placeholder="Enter bathrooms">
-            <input type="text" name="price" placeholder="Enter price">
-            <input type="text" name="squar" placeholder="Enter squar">
-            <button type="submit">Add Entry</button>
-        </form>
+    <form action="/logout" method="POST" style="display: flex; justify-content: end;">
+        @csrf
+        <button type="submit" style="background-color: red; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">
+            Logout
+        </button>
+    </form>
+    <div class="body">
+        <div class="container">
+            <h2>CRUD Image & Description</h2>
+            
+            <form action="{{ url('/upload') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <input type="file" name="image[]" accept="image/*" multiple/>
+                <input type="text" name="title" placeholder="Enter title">
+                <input type="text" name="description" placeholder="Enter description">
+                <input type="text" name="bedrooms" placeholder="Enter bedrooms">
+                <input type="text" name="bathrooms" placeholder="Enter bathrooms">
+                <input type="text" name="price" placeholder="Enter price">
+                <input type="text" name="squar" placeholder="Enter squar">
+                <button type="submit">Add Entry</button>
+            </form>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>title</th>
-                    <th>Description</th>
-                    <th>Bedrooms</th>
-                    <th>Bathrooms</th>
-                    <th>Price</th>
-                    <th>Squar</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach($entries as $entry)
+            <table>
+                <thead>
                     <tr>
-                        <td>
-                            @foreach($entry->image_path as $imagePath)
-                                <img src="{{ asset($imagePath) }}" class="image-preview">
-                            @endforeach
-                        </td>
-                        <td>
-                            <input type="text" value="{{ $entry->title }}" 
-                                onchange="updateEntry({{ $entry->id }}, this.value, 'title')">
-                        </td>
-                        <td>
-                            <input type="text" value="{{ $entry->description }}" 
-                                onchange="updateEntry({{ $entry->id }}, this.value, 'description')">
-                        </td>
-                        <td>
-                            <input type="text" value="{{ $entry->bedrooms }}" 
-                                onchange="updateEntry({{ $entry->id }}, this.value, 'bedrooms')">
-                        </td>
-                        <td>
-                            <input type="text" value="{{ $entry->bathrooms }}" 
-                                onchange="updateEntry({{ $entry->id }}, this.value, 'bathrooms')">
-                        </td>
-                        <td>
-                            <input type="text" value="{{ $entry->price }}" 
-                                onchange="updateEntry({{ $entry->id }}, this.value, 'price')">
-                        </td>
-                        <td>
-                            <input type="text" value="{{ $entry->squar }}" 
-                                onchange="updateEntry({{ $entry->id }}, this.value, 'squar')">
-                        </td>
-                        <td>
-                            <button onclick="deleteEntry({{ $entry->id }})">Delete</button>
-                        </td>
+                        <th>Image</th>
+                        <th>title</th>
+                        <th>Description</th>
+                        <th>Bedrooms</th>
+                        <th>Bathrooms</th>
+                        <th>Price</th>
+                        <th>Squar</th>
+                        <th>Actions</th>
                     </tr>
-                @endforeach
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach($entries as $entry)
+                        <tr>
+                            <td>
+                                @foreach($entry->image_path as $imagePath)
+                                    <img src="{{ asset($imagePath) }}" class="image-preview">
+                                @endforeach
+                            </td>
+                            <td>
+                                <input type="text" value="{{ $entry->title }}" 
+                                    onchange="updateEntry({{ $entry->id }}, this.value, 'title')">
+                            </td>
+                            <td>
+                                <input type="text" value="{{ $entry->description }}" 
+                                    onchange="updateEntry({{ $entry->id }}, this.value, 'description')">
+                            </td>
+                            <td>
+                                <input type="text" value="{{ $entry->bedrooms }}" 
+                                    onchange="updateEntry({{ $entry->id }}, this.value, 'bedrooms')">
+                            </td>
+                            <td>
+                                <input type="text" value="{{ $entry->bathrooms }}" 
+                                    onchange="updateEntry({{ $entry->id }}, this.value, 'bathrooms')">
+                            </td>
+                            <td>
+                                <input type="text" value="{{ $entry->price }}" 
+                                    onchange="updateEntry({{ $entry->id }}, this.value, 'price')">
+                            </td>
+                            <td>
+                                <input type="text" value="{{ $entry->squar }}" 
+                                    onchange="updateEntry({{ $entry->id }}, this.value, 'squar')">
+                            </td>
+                            <td>
+                                <button onclick="deleteEntry({{ $entry->id }})">Delete</button>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script>

@@ -161,4 +161,8 @@ class ImageController extends Controller
     public function contact(Request $request){
         return view('contact');
     }
+    
+    public function login(Request $request){
+        return redirect()->intended('/');
+    }
 }

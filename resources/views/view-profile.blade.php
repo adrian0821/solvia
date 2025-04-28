@@ -1,6 +1,12 @@
 <head>    
 <link rel="icon" href="{{ Url('assets/favicon.svg') }}" />
 </head>
+<form action="/logout" method="POST" style="display: flex; justify-content: end;">
+    @csrf
+    <button type="submit" style="background-color: red; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">
+        Logout
+    </button>
+</form>
 
 <div style="max-width: 1000px; margin: 40px auto; font-family: Arial, sans-serif;">
     <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px; color: #333;">Profiles & Card Info</h2>
